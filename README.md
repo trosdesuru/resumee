@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Résumé build Vite + React
 
 Currently, two official plugins are available:
