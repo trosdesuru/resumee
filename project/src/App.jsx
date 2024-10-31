@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 
-// import SearchBar from './components/SearchBar.jsx'
+// import SearchBar from './components/SearchBar'
 import TopBar from './components/TopBar'
 import BottomBar from './components/BottomBar'
 import SidebarIcons from './components/SideBarIcons'
 import SideBar from './components/SideBar'
 import EditorPanel from './components/EditorPanel'
-import tabs from './components/Tabs'
 import TabBar from './components/TabBar'
 import Terminal from './components/Terminal'
 

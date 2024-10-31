@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Tabs = ({ tabs, onTabclick, activateTab }) => {
+const Tab = ({ tabs, onTabclick, activateTab }) => {
     return (
         <div className='flex border-b border-gray-700'>
             {tabs.map((tab, index) => (
@@ -15,4 +15,4 @@ const Tabs = ({ tabs, onTabclick, activateTab }) => {
     )
 }
 
-export default Tabs
+export default Tab
