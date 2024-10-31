@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
+import SearchBar from './components/SearchBar'
 import TopBar from './components/TopBar'
 import BottomBar from './components/BottomBar'
-import SearchBar from './components/SearchBar'
 import SidebarIcons from './components/SideBarIcons'
 import SideBar from './components/SideBar'
 import EditorPanel from './components/EditorPanel'
@@ -31,10 +31,8 @@ function App() {
 
   return (
     <div className="app flex flex-col h-screen font-mono bg-gray-900 text-white" style={{ fontFamily: "'Fira Code', monospace" }}>
-      <TopBar>
-        <SearchBar onSearch={handleSearch} />
-      </TopBar>
-
+      <TopBar />
+      <SearchBar onSearch={handleSearch} />
       <div className="flex flex-1">
         <SidebarIcons />
         <SideBar openSection={openSection} />
