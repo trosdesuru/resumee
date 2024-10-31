@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import SearchBar from './components/SearchBar'
+import SearchBar from './components/SearchBar.jsx'
 import TopBar from './components/TopBar'
 import BottomBar from './components/BottomBar'
 import SidebarIcons from './components/SideBarIcons'
