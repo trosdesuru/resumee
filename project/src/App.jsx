@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import SearchBar from './components/SearchBar.jsx'
+// import SearchBar from './components/SearchBar.jsx'
 import TopBar from './components/TopBar'
 import BottomBar from './components/BottomBar'
 import SidebarIcons from './components/SideBarIcons'
@@ -24,15 +24,15 @@ function App() {
     setOpenTabs(openTabs.filter(tab => tab !== section))
   }
 
-  const handleSearch = (query) => {
-    const results = tabs.filter((tab) => tab.content.includes(query))
-    setSearchResults(results)
-  }
+  // const handleSearch = (query) => {
+  //   const results = tabs.filter((tab) => tab.content.includes(query))
+  //   setSearchResults(results)
+  // }
 
   return (
     <div className="app flex flex-col h-screen font-mono bg-gray-900 text-white" style={{ fontFamily: "'Fira Code', monospace" }}>
       <TopBar />
-      <SearchBar onSearch={handleSearch} />
+      {/* <SearchBar onSearch={handleSearch} /> */}
       <div className="flex flex-1">
         <SidebarIcons />
         <SideBar openSection={openSection} />
