@@ -6,11 +6,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,9 +26,11 @@ a:hover {
 }
 
 body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Fira Code', monospace;
   margin: 0;
-  display: flex;
-  place-items: center;
+  align-items: center;
   min-width: none;
   min-height: 100vh;
 }
@@ -59,4 +59,26 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.app {
+  @apply flex flex-col h-screen;
+}
+
+.sidebar {
+  background-color: #252526;
+  color: white;
+  padding: 1rem;
+}
+
+.editor-panel {
+  background-color: #1e1e1e;
+  @apply flex-1 p-4;
+  color: white;
+}
+
+.resize-handle {
+  cursor: ew-resize;
+  width: 5px;
+  background-color: transparent;
 }
