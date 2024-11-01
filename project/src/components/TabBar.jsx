@@ -1,14 +1,15 @@
+import React from 'react'
+
 function TabBar({ openTabs, closeTab }) {
     return (
-        <div className="flex space-x-4 bg-tab p-2 border-b border-border">
+        <div className="flex bg-tab p-8 border-b border-border">
             {openTabs.map((tab) => (
-                <button key={tab} className="px-4 py-1 bg-highlight rounded text-white">Experiencia
-                    {/* Más pestañas se añadirán dinámicamente */}
-                    {tab}
-                    < span onClick={() => closeTab(tab)} className="ml-2 text-sm cursor-pointer text-red-500">x</span>
-                </button>
+                <div key={tab} className="flex items-center px-4 py-1 bg-gray-700 hover:bg-highlight text-white rounded-t cursor-pointer space-x-2">
+                    <span className="font-medium">{tab}</span>
+                    <button onClick={() => closeTab(tab)} className="text-red-500 hover:text-red-600 ml-2 focus:outline-none">x</button>
+                </div>
             ))}
-        </div >
+        </div>
     )
 }
 

@@ -1,3 +1,5 @@
+// App.jsx
+
 import React, { useState } from 'react'
 
 import TopBar from './components/TopBar'
@@ -18,11 +20,11 @@ function App() {
   }
 
   const closeTab = (section) => {
-    setOpenTabs(openTabs.filter(tab => tab !== section))
+    setOpenTabs(openTabs.filter((tab) => tab !== section))
   }
 
   return (
-    <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-gray-900 text-white" style={{ fontFamily: "'Fira Code', monospace" }}>
+    <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-VSGray">
       <TopBar />
       <div className="flex flex-1 overflow-hidden">
         <SidebarIcons />
@@ -34,7 +36,6 @@ function App() {
           <Terminal />
         </div>
       </div>
-
       <BottomBar />
     </div>
   )

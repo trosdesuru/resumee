@@ -11,7 +11,5 @@ html, body, #root {
 }
 
 body {
-  background-color: #1e1e1e;
-  color: white;
   font-family: 'Fira Code', monospace;
 }
