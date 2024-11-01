@@ -24,3 +24,5 @@ const SearchBar = ({ onSearch }) => {
 }
 
 export default SearchBar
+
+// TODO hover, search icon and window on focus

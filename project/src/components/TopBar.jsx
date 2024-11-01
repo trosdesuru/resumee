@@ -4,7 +4,7 @@ import SearchBar from './Searchbar'
 
 const TopBar = () => {
   return (
-    <div className='fixed top-0 w-full flex items-center h-10 justify-between bg-editor border-b border-border z-10'>
+    <div className='fixed top-0 w-full flex items-center h-10 justify-between bg-background border-b border-border z-10'>
 
       <div className='flex items-center space-x-2 ml-2'>
         <button className='size-3 bg-red-500 rounded-full hover:bg-red-600 transition-all'></button>
@@ -27,3 +27,5 @@ const TopBar = () => {
 }
 
 export default TopBar
+
+// TODO add arrows on the left side from SearchBar
