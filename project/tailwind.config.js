@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#252526',
+        background: 'gray-900',
         VSGray: '#333333',
         VSBorder: '#4B4B4B',
         VSInput: '#474747',
-        sidebar: '#1E1E1E',
+        VSBar: '#1E1E1E',
         editor: '#252526',
         tab: '#333333',
         highlight: '#007ACC',
