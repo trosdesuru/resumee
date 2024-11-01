@@ -8,15 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
+        background: '#252526',
         VSGray: '#333333',
-        VSBorder: '#757575',
+        VSBorder: '#4B4B4B',
         VSInput: '#474747',
         sidebar: '#1E1E1E',
         editor: '#252526',
         tab: '#333333',
         highlight: '#007ACC',
         border: '#3C3C3C',
-        textPrimary: '#D4D4D4',
+        textPrimary: '#A1A1A1',
         textSecondary: '#858585',
       },
       transitionDuration: {
