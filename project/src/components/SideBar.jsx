@@ -22,7 +22,7 @@ const Sidebar = ({ openSection }) => {
     }
 
     return (
-        <div style={{ width }} className="sidebar bg-gray-800 p-2 flex">
+        <div style={{ width }} className="flex p-2 bg-gray-800">
             <div className="flex-1">
                 <h2 className="text-xl font-bold mb-4 text-textPrimary">Eduard Hernández</h2>
                 <ul>
