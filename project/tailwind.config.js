@@ -16,7 +16,7 @@ export default {
         border: '#4B4B4B',
         input: '#474747',
         bar: '#1E1E1E',
-        editor: '#252526',
+        editor: '#2E2E2E',
         tab: '#333333',
         highlight: '#007ACC',
         border: '#3C3C3C',
