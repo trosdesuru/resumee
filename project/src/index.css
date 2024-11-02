@@ -19,22 +19,22 @@ body {
 }
 
 .hover\:line {
-  position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
+  position: relative; 
 }
 
 .hover\:line::before {
   content: '';
   display: block;
-  width: 100%; /* Ancho total del li */
-  height: 1px; /* Altura de la línea */
-  background-color: #1275C8; /* Color amarillo */
+  width: 100%; 
+  height: 1px; 
+  background-color: #1275C8; 
   position: absolute;
-  bottom: 1px; /* Mueve la línea hacia abajo, bajo el li */
+  bottom: 1px; 
   left: 0;
   transform: scaleX(0);
-  transition: transform 0.2s ease; /* Asegúrate de que esté detrás del li */
+  transition: transform 0.2s ease; 
 }
 
 .hover\:line:hover::before {
-  transform: scaleX(1); /* Escala la línea al hacer hover */
+  transform: scaleX(1);
 }

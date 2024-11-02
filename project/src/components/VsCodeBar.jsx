@@ -2,7 +2,9 @@ import React from 'react'
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
 import SearchBar from './Searchbar'
 
-const TopBar = () => {
+const VsCodeBar = () => {
+  console.debug('vscode bar -> call')
+
   return (
     <div className='fixed top-0 w-full flex items-center h-10 justify-between bg-background border-b border-border z-10'>
 
@@ -26,6 +28,6 @@ const TopBar = () => {
   )
 }
 
-export default TopBar
+export default VsCodeBar
 
 // TODO add arrows on the left side from SearchBar

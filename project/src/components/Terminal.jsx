@@ -3,6 +3,8 @@ import { FiChevronRight } from 'react-icons/fi'
 import { VscChevronDown } from 'react-icons/vsc'
 
 const Terminal = () => {
+  console.debug('terminal -> call')
+
   const [commands, setCommands] = useState([])
   const [input, setInput] = useState('')
 

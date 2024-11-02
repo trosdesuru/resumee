@@ -1,14 +1,25 @@
 import React from 'react'
 
-function TabBar({ openTabs, closeTab }) {
+function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
+    console.debug('tap bar -> call')
+
     if (openTabs.length === 0) return null
 
     return (
-        <div className='TabBar flex bg-vlue p-10 border-b border-border'>
+        <div className='flex mt-10 font-doppioOne text-textPrimary'>
             {openTabs.map((tab) => (
-                <div key={tab} className='flex items-center px-4 py-1 bg-background hover:bg-highlight text-white rounded-t cursor-pointer space-x-2'>
-                    <span className='font-medium'>{tab}</span>
-                    <button onClick={() => closeTab(tab)} className='text-red-500 hover:text-red-600 ml-2 focus:outline-none'>x</button>
+                <div
+                    key={tab}
+                    onClick={() => setActiveTab(tab)}
+                    className=
+                    {`flex items-center px-6 py-2 cursor-pointer space-x-2 border-r border-border 
+                        ${tab === activeTab ? 'border-t border-t-bleu bg-gray' : 'border-b hover:bg-tab'}`}
+                >
+                    <span className='font-firaCode text-xs'>{tab}</span>
+                    <button onClick={(event) => {
+                        event.stopPropagation()
+                        closeTab(tab)
+                    }} className='text-sm text-white ml-2'>x</button>
                 </div>
             ))}
         </div>
@@ -17,4 +28,5 @@ function TabBar({ openTabs, closeTab }) {
 
 export default TabBar
 
-// TODO Hide when nothing opened
+// TODO first option selected will be selected, then just open tabs
+// TODO moving tabs when selected

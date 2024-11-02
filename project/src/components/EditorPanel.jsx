@@ -1,6 +1,8 @@
 import React from 'react'
 
 function EditorPanel({ openTabs }) {
+    console.debug('editor panel -> call')
+
     return (
         <div className="flex-1 p-4 overflow-y-auto overflow-x-hidden bg-gray">
             {openTabs.length > 0 ? (

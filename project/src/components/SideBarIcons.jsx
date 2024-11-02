@@ -9,6 +9,8 @@ import { MdCss } from "react-icons/md"
 import { DiCss3 } from "react-icons/di"
 
 const SidebarIcons = () => {
+  console.debug('side bar icons -> call')
+
   return (
     <div className="sidebar-icons flex flex-col p-3 mt-10 space-y-4 h-full">
       <div className="flex flex-col items-center space-y-4">
