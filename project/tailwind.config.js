@@ -1,27 +1,35 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        background: 'gray-900',
-        VSGray: '#333333',
-        VSBorder: '#4B4B4B',
-        VSInput: '#474747',
-        VSBar: '#1E1E1E',
+        test: '#FD5B40',
+        bleu: '#1275C8',
+        background: '#212121',
+        gray: '#333333',
+        border: '#4B4B4B',
+        input: '#474747',
+        bar: '#1E1E1E',
         editor: '#252526',
         tab: '#333333',
         highlight: '#007ACC',
         border: '#3C3C3C',
         textPrimary: '#A1A1A1',
         textSecondary: '#858585',
+        yellowHover: '#FBBF24',
       },
       transitionDuration: {
         DEFAULT: '200ms',
+      },
+      fontFamily: {
+        doppioOne: ['Doppio One', ...defaultTheme.fontFamily.sans],
+        firaCode: ['Fira Code', ...defaultTheme.fontFamily.sans]
       },
     },
   },
