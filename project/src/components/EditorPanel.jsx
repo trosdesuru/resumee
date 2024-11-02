@@ -2,7 +2,7 @@ import React from 'react'
 
 function EditorPanel({ openTabs }) {
     return (
-        <div className="flex-1 p-4 overflow-y-auto overflow-x-hidden">
+        <div className="flex-1 p-4 overflow-y-auto overflow-x-hidden bg-gray">
             {openTabs.length > 0 ? (
                 openTabs.map((tab) => (
                     <div key={tab} className="text-white mb-4">
@@ -11,7 +11,7 @@ function EditorPanel({ openTabs }) {
                     </div>
                 ))
             ) : (
-                <p className="text-textPrimary text-sm">No hay secciones abiertas.</p>
+                <p className="font-firaCode text-textPrimary text-sm mt-10">No hay secciones abiertas.</p>
             )}
         </div>
     )

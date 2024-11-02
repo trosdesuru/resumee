@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Fira+Code:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,8 +11,30 @@ html, body, #root {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  font-family: 'Doppio One', 'Fire Code';
 }
 
 body {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Fira Code', 'Doppio One';
+}
+
+.hover\:line {
+  position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
+}
+
+.hover\:line::before {
+  content: '';
+  display: block;
+  width: 100%; /* Ancho total del li */
+  height: 1px; /* Altura de la línea */
+  background-color: #1275C8; /* Color amarillo */
+  position: absolute;
+  bottom: 1px; /* Mueve la línea hacia abajo, bajo el li */
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s ease; /* Asegúrate de que esté detrás del li */
+}
+
+.hover\:line:hover::before {
+  transform: scaleX(1); /* Escala la línea al hacer hover */
 }

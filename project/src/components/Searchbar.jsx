@@ -16,8 +16,8 @@ const SearchBar = ({ onSearch }) => {
         type="text"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
-        placeholder="Currículum de Edua..."
-        className="w-2/4 bg-VSInput text-white text-sm px-3 py-1 rounded-md border-VSBorder"
+        placeholder="currículum de Edua..."
+        className="w-2/4 text-black text-sm px-3 py-1 rounded-md bg-gray"
       />
     </form>
   )

@@ -12,15 +12,15 @@ const TopBar = () => {
         <button className='size-3 bg-green-500 rounded-full hover:bg-green-600 transition-all'></button>
       </div>
 
-      <div className='flex-1 p-4'>
+      <div className='flex-1'>
         <SearchBar />
       </div>
 
       <div className='flex items-center space-x-2 mr-2'>
-        <button className='text-gray-400 hover:text-white transition-all'><BiDockLeft size={20} /></button>
-        <button className='text-gray-400 hover:text-white transition-all'><BiDockBottom size={20} /></button>
-        <button className='text-gray-400 hover:text-white transition-all'><BiDockRight size={20} /></button>
-        <button className='text-gray-400 hover:text-white transition-all'><BiColumns size={20} /></button>
+        <button className='text-textPrimary hover:text-white transition-all'><BiDockLeft size={20} /></button>
+        <button className='text-textPrimary hover:text-white transition-all'><BiDockBottom size={20} /></button>
+        <button className='text-textPrimary hover:text-white transition-all'><BiDockRight size={20} /></button>
+        <button className='text-textPrimary hover:text-white transition-all'><BiColumns size={20} /></button>
       </div>
     </div>
   )

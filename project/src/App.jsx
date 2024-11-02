@@ -1,5 +1,3 @@
-// App.jsx
-
 import React, { useState } from 'react'
 
 import TopBar from './components/TopBar'
@@ -24,7 +22,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-VSGray">
+    <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
       <TopBar />
       <div className="flex flex-1 overflow-hidden">
         <SidebarIcons />
