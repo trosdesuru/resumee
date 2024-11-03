@@ -24,7 +24,7 @@ function App() {
   }
 
   const closeTab = (section) => {
-    setOpenTabs(openTabs.filter((tab) => tab !== section))
+    setOpenTabs(openTabs.filter(tab => tab !== section))
 
     if (activeTab === section) {
       setActiveTab(openTabs[0] || null)

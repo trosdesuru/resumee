@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { FaBriefcase, FaCode, FaGraduationCap, FaTools } from 'react-icons/fa'
+import { FaBriefcase, FaCode, FaGraduationCap, FaHtml5, FaTools, FaReact } from 'react-icons/fa'
 import { RiInformation2Line } from "react-icons/ri"
+import { DiJavascript1 } from "react-icons/di"
+import { VscGithub } from 'react-icons/vsc'
 
 const Sidebar = ({ openSection }) => {
     console.debug('side bar -> call')
@@ -42,16 +44,26 @@ const Sidebar = ({ openSection }) => {
 
                 <ul className="flex flex-col font-doppioOne text-sm">
                     <li onClick={() => openSection('Experiencia')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
-                        <FaBriefcase className="mr-2 text-bleu" /> Experiencia
+                        {/* <FaBriefcase className="mr-2 text-bleu" /> Experiencia */}
+                        <DiJavascript1 size={18} className="mr-2 text-yellowHover" /> Experiencia
                     </li>
                     <li onClick={() => openSection('Habilidades')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
-                        <FaCode className="mr-2 text-bleu" /> Habilidad
+                        {/* <FaCode className="mr-2 text-bleu" /> Habilidad */}
+                        <FaReact size={18} className="mr-2 text-bleu" /> Habilidad
                     </li>
                     <li onClick={() => openSection('Proyectos')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
-                        <FaTools className="mr-2 text-bleu" /> Proyectos
+                        {/* <FaTools className="mr-2 text-bleu" /> Proyectos */}
+                        <VscGithub size={18} className="mr-2 text-textPrimary" /> Proyectos
                     </li>
                     <li onClick={() => openSection('Educación')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
-                        <FaGraduationCap className="mr-2 text-bleu" /> Educación
+                        {/* <FaGraduationCap className="mr-2 text-bleu" /> Educación */}
+                        <div className="relative flex items-center">
+                            <div className="relative flex items-center justify-center mr-2">
+                                <span className="absolute inset-0.7 flex items-center justify-center w-3 h-3 bg-white rounded-full"></span>
+                                <FaHtml5 size={18} className="text-orange-500 relative z-10" />
+                            </div>
+                        </div>
+                        Educación
                     </li>
                 </ul>
             </div>

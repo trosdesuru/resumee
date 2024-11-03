@@ -19,13 +19,12 @@ function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
                         onClick={() => setActiveTab(tab)}
                         className=
                         {`flex items-center px-6 py-2 cursor-pointer space-x-2 border-r border-border 
-                        ${tab === activeTab ? 'border-t border-t-bleu bg-gray' : 'border-b hover:bg-tab'}`}
+                        ${tab === activeTab ? 'border-t border-t-bleu bg-gray' : 'hover:bg-tab'}`}
                     >
                         <span className='font-firaCode text-xs'>{tab}</span>
-                        <button onClick={(event) => {
-                            event.stopPropagation()
-                            closeTab(tab)
-                        }} className='font-mono font-extralight text-sm text-white ml-2'>x</button>
+                        <button
+                            onClick={(event) => { event.stopPropagation(), closeTab(tab) }}
+                            className='font-mono font-extralight text-sm text-white ml-2'>x</button>
                     </div>
                 ))}
             </div>
