@@ -4,7 +4,7 @@ const SearchBar = ({ onSearch }) => {
   console.debug('search bar -> call')
   const [query, setQuery] = useState()
 
-  const handleSearch = (event, query) => {
+  const handleSearch = (event) => {
     event.preventDefault()
 
     onSearch(query)
