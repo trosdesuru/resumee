@@ -11,6 +11,8 @@ const Sidebar = ({ openSection }) => {
     const [isDragging, setIsDragging] = useState('')
 
     const handleMouseDown = (event) => {
+        event.preventDefault()
+        
         setIsDragging(true)
         const startX = event.clientX
 

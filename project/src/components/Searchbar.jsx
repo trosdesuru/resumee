@@ -4,7 +4,7 @@ const SearchBar = ({ onSearch }) => {
   console.debug('search bar -> call')
   const [query, setQuery] = useState('')
 
-  const handleSearch = (event) => {
+  const handleSearch = (event, query) => {
     event.preventDefault()
 
     onSearch(query)
@@ -27,3 +27,4 @@ const SearchBar = ({ onSearch }) => {
 export default SearchBar
 
 // TODO hover, search icon and window on focus
+// TODO onSearch is not a function

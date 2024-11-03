@@ -2,7 +2,7 @@ import React from 'react'
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
 import SearchBar from './Searchbar'
 
-const VsCodeBar = () => {
+const VsCodeBar = (event) => {
   console.debug('vscode bar -> call')
 
   return (
