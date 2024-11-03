@@ -13,7 +13,7 @@ function VsCodeScreen({ activeTab }) {
                     <p>Contenido de {activeTab}</p>
                 </div>
             ) : (
-                <SiVisualstudiocode className="text-editor text-[60vw]" />
+                <SiVisualstudiocode className="text-editor text-[30vw]" />
             )}
         </div>
     )
