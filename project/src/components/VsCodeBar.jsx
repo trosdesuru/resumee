@@ -1,5 +1,5 @@
 import React from 'react'
-import Searchbar from './SearchBar'
+import SearchBar from './SearchBar.jsx'
 
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
 
@@ -16,7 +16,7 @@ const VsCodeBar = () => {
       </div>
 
       <div className='flex-1'>
-        <Searchbar />
+        <SearchBar />
       </div>
 
       <div className='flex items-center space-x-2 mr-4'>
