@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { FaBriefcase, FaCode, FaGraduationCap, FaTools } from 'react-icons/fa'
+import React from 'react'
+
+import { FaBriefcase } from 'react-icons/fa'
 
 const Tab = ({ tabs, onTabclick, activeTab }) => {
     console.debug('tab -> call')

@@ -1,11 +1,11 @@
 import React from 'react'
-import { AiOutlineFile, AiOutlineSearch, AiOutlineCode } from 'react-icons/ai'
+
 import { VscSourceControl, VscDebugAlt, VscExtensions, VscLiveShare, VscGithub } from 'react-icons/vsc'
+import { AiOutlineFile, AiOutlineSearch, AiOutlineCode } from 'react-icons/ai'
 import { FaDocker, FaHtml5, FaReact, FaFigma, FaNodeJs } from 'react-icons/fa'
-import { RiTailwindCssFill } from "react-icons/ri"
 import { SiVitess, SiVisualstudiocode, SiVim } from "react-icons/si"
+import { RiTailwindCssFill } from "react-icons/ri"
 import { IoLogoJavascript } from "react-icons/io"
-import { MdCss } from "react-icons/md"
 import { DiCss3 } from "react-icons/di"
 
 const SidebarIcons = () => {

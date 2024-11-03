@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { GoGitCompare } from "react-icons/go"
 import { FaTerminal } from "react-icons/fa"
 import { BiDockBottom } from "react-icons/bi"
@@ -19,16 +20,16 @@ function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
                         onClick={() => setActiveTab(tab)}
                         className=
                         {`flex items-center px-6 py-2 cursor-pointer space-x-2 border-r border-border 
-                        ${tab === activeTab ? 'border-t border-t-bleu bg-gray' : 'hover:bg-tab'}`}
+                        ${tab === activeTab ? 'border-t-2 border-t-bleu bg-gray' : 'hover:bg-tab'}`}
                     >
-                        <span className='font-firaCode text-xs'>{tab}</span>
+                        <h2 className='font-firaCode text-xs'>{tab}</h2>
                         <button
                             onClick={(event) => { event.stopPropagation(), closeTab(tab) }}
                             className='font-mono font-extralight text-sm text-white ml-2'>x</button>
                     </div>
                 ))}
             </div>
-            <div className='flex items-center space-x-2 mr-4'>
+            <div className='flex items-center space-x-2 mx-4'>
                 <button className='text-textPrimary hover:text-white transition-all'><VscRunAll size={17} /></button>
                 <button className='text-textPrimary hover:text-white transition-all'><GoGitCompare size={17} /></button>
                 <button className='text-textPrimary hover:text-white transition-all'><FaTerminal size={17} /></button>

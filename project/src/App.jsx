@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import BottomBar from './components/BottomBar'
-import MainScreen from './components/MainScreen'
+import VsCodeScreen from './components/VsCodeScreen'
 import SidebarIcons from './components/SideBarIcons'
 import SideBar from './components/SideBar'
 import TabBar from './components/TabBar'
@@ -24,11 +24,17 @@ function App() {
   }
 
   const closeTab = (section) => {
-    setOpenTabs(openTabs.filter(tab => tab !== section))
-
+    const updatedTabs = openTabs.filter(tab => tab !== section)
+    setOpenTabs(updatedTabs)
+    
     if (activeTab === section) {
-      setActiveTab(openTabs[0] || null)
-
+      const tabIndex = openTabs.indexOf(section)
+      if (updatedTabs.length > 0) {
+        const newActiveTab = updatedTabs[tabIndex] || updatedTabs[tabIndex - 1]
+        setActiveTab(newActiveTab)
+      } else {
+        setActiveTab(null)
+      }
     }
   }
 
@@ -42,7 +48,7 @@ function App() {
 
         <div className="flex flex-col flex-1 overflow-hidden">
           <TabBar openTabs={openTabs} activeTab={activeTab} setActiveTab={setActiveTab} closeTab={closeTab} />
-          <MainScreen openTabs={openTabs} />
+          <VsCodeScreen activeTab={activeTab} />
           <Terminal />
         </div>
       </div>

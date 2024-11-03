@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { FaBriefcase, FaCode, FaGraduationCap, FaHtml5, FaTools, FaReact } from 'react-icons/fa'
+
+import { FaHtml5, FaReact } from 'react-icons/fa'
 import { RiInformation2Line } from "react-icons/ri"
 import { DiJavascript1 } from "react-icons/di"
 import { VscGithub } from 'react-icons/vsc'
@@ -12,7 +13,7 @@ const Sidebar = ({ openSection }) => {
 
     const handleMouseDown = (event) => {
         event.preventDefault()
-        
+
         setIsDragging(true)
         const startX = event.clientX
 
@@ -61,7 +62,7 @@ const Sidebar = ({ openSection }) => {
                         {/* <FaGraduationCap className="mr-2 text-bleu" /> Educación */}
                         <div className="relative flex items-center">
                             <div className="relative flex items-center justify-center mr-2">
-                                <span className="absolute inset-0.7 flex items-center justify-center w-3 h-3 bg-white rounded-full"></span>
+                                <p className="absolute flex items-center inset-0.7 justify-center w-3 h-3 bg-white rounded-full"></p>
                                 <FaHtml5 size={18} className="text-orange-500 relative z-10" />
                             </div>
                         </div>
