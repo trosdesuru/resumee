@@ -16,11 +16,9 @@ function App() {
 
   const openSection = (section) => {
     if (!openTabs.includes(section)) {
-      setOpenTabs([...openTabs, section])
+      setOpenTabs(prevTabs => [...prevTabs, section])
     }
-    if (!activeTab) {
-      setActiveTab(section)
-    }
+    setActiveTab(section)
   }
 
   const closeTab = (section) => {
@@ -32,6 +30,7 @@ function App() {
       if (updatedTabs.length > 0) {
         const newActiveTab = updatedTabs[tabIndex] || updatedTabs[tabIndex - 1]
         setActiveTab(newActiveTab)
+
       } else {
         setActiveTab(null)
       }
