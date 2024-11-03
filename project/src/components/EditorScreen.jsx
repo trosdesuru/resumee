@@ -2,8 +2,8 @@ import React from 'react'
 
 import { SiVisualstudiocode } from "react-icons/si"
 
-function VsCodeScreen({ activeTab }) {
-    console.debug('vscode screen -> call')
+function EditorScreen({ activeTab }) {
+    console.debug('editor screen -> call')
 
     return (
         <div className="flex-1 p-4 overflow-y-auto overflow-x-hidden bg-gray flex items-center justify-center">
@@ -19,4 +19,4 @@ function VsCodeScreen({ activeTab }) {
     )
 }
 
-export default VsCodeScreen
+export default EditorScreen

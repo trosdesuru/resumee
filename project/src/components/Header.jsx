@@ -3,8 +3,8 @@ import SearchBar from './SearchBar'
 
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
 
-const VsCodeBar = () => {
-  console.debug('vscode bar -> call')
+const Header = () => {
+  console.debug('editor bar -> call')
 
   return (
     <div className='fixed top-0 w-full flex items-center h-10 justify-between bg-background border-b border-border z-10'>
@@ -29,7 +29,7 @@ const VsCodeBar = () => {
   )
 }
 
-export default VsCodeBar
+export default Header
 
 // TODO Fix SearchBar imporations, error deploying project on Vercel
 // TODO add arrows on the left side from SearchBar
