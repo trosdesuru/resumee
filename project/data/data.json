@@ -1,0 +1,18 @@
+{
+    "Experiencia": {
+        "title": "Experiencia",
+        "content": "Contenido relacionado con la experiencia laboral."
+    },
+    "Habilidades": {
+        "title": "Habilidades",
+        "content": "Contenido relacionado con habilidades."
+    },
+    "Proyectos": {
+        "title": "Proyectos",
+        "content": "Contenido relacionado con proyectos personales."
+    },
+    "Educación": {
+        "title": "Educación",
+        "content": "Contenido relacionado con la educación."
+    }
+}
