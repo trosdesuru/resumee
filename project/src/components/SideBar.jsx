@@ -50,14 +50,17 @@ const Sidebar = ({ openSection }) => {
                         {/* <FaBriefcase className="mr-2 text-bleu" /> Experiencia */}
                         <DiJavascript1 size={18} className="mr-2 text-yellowHover" /> Experiencia
                     </li>
+
                     <li onClick={() => openSection('Habilidades')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
                         {/* <FaCode className="mr-2 text-bleu" /> Habilidad */}
                         <FaReact size={18} className="mr-2 text-bleu" /> Habilidad
                     </li>
+
                     <li onClick={() => openSection('Proyectos')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
                         {/* <FaTools className="mr-2 text-bleu" /> Proyectos */}
                         <VscGithub size={18} className="mr-2 text-textPrimary" /> Proyectos
                     </li>
+
                     <li onClick={() => openSection('Educación')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
                         {/* <FaGraduationCap className="mr-2 text-bleu" /> Educación */}
                         <div className="relative flex items-center">

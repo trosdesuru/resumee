@@ -29,7 +29,9 @@ const SidebarIcons = () => {
         <VscGithub className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
         <FaDocker className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
       </div>
+
       <div className="border-t border-textPrimary my-4"></div>
+      
       <div className="flex flex-col items-center space-y-4">
         <FaHtml5 className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
         <DiCss3 className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
