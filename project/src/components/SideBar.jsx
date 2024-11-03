@@ -32,6 +32,7 @@ const Sidebar = ({ openSection }) => {
     return (
         <div style={{ width }} className="flex relative bg-background text-textPrimary mt-10 h-full border-r border-l border-border">
             <div className="flex flex-col h-full w-full">
+
                 <div className='flex flex-row items-center pl-4 pt-4 pb-4'>
                     <RiInformation2Line className="mr-2 text-bleu" />
                     <h2 className="text-sm font-doppioOne">Eduard Hernández</h2>
@@ -40,7 +41,7 @@ const Sidebar = ({ openSection }) => {
                 <div className="w-full border-t border-gray"></div>
 
                 <ul className="flex flex-col font-doppioOne text-sm">
-                    <li onClick={() => openSection('Experiencia')} className="flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
+                    <li onClick={() => openSection('Experiencia')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
                         <FaBriefcase className="mr-2 text-bleu" /> Experiencia
                     </li>
                     <li onClick={() => openSection('Habilidades')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
