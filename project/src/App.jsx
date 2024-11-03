@@ -41,7 +41,6 @@ function App() {
   return (
     <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
       <VsCodeBar />
-      <VsCodeBar />
       <div className="flex flex-1 overflow-hidden">
         <SidebarIcons />
         <SideBar openSection={openSection} />
