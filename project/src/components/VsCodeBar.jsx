@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchBar from './SearchBar.jsx'
+import SearchBar from './SearchBar'
 
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
 
