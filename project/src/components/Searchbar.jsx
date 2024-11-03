@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 const SearchBar = ({ onSearch }) => {
   console.debug('search bar -> call')
 
-  const [query, setQuery] = useState('')
-  
+  const [query, setQuery] = useState()
+
   const handleSearch = (event, query) => {
     event.preventDefault()
 
