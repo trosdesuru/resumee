@@ -1,5 +1,5 @@
 import React from 'react'
-// import SearchBar from './SearchBar'
+import SearchBar from './SearchBar'
 
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
 
@@ -15,9 +15,9 @@ const VsCodeBar = () => {
         <button className='size-3 bg-green-500 rounded-full hover:bg-green-700 transition-all'></button>
       </div>
 
-      {/* <div className='flex-1'>
+      <div className='flex-1'>
         <SearchBar />
-      </div> */}
+      </div>
 
       <div className='flex items-center space-x-2 mr-4'>
         <button className='text-textPrimary hover:text-white transition-all'><BiDockLeft size={20} /></button>
