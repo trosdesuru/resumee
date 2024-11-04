@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 
 const ProfileCard = ({ position, onClose }) => {
     const [dragging, setDragging] = useState(false)
@@ -83,28 +83,28 @@ const ProfileCard = ({ position, onClose }) => {
                     </div>
 
                     <div className="flex flex-col space-y-4 mt-4">
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center space-x-2 text-[#ECECEC]">
                             <FaEnvelope />
-                            <p className='text-sm font-jetbrains font-thin'>eduardhernandezventos@gmail.com</p>
+                            <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>eduardhernandezventos@gmail.com</p>
                         </div>
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center space-x-2 text-[#ECECEC]">
                             <FaPhone />
-                            <p className='text-sm font-jetbrains font-thin'>+34 683 584 981</p>
+                            <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>+34 683 584 981</p>
                         </div>
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center space-x-2 text-[#ECECEC]">
                             <FaMapMarkerAlt />
-                            <p className='text-sm font-jetbrains font-thin'>Barcelona, España</p>
+                            <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>Barcelona, España</p>
                         </div>
 
-                        <div className="flex space-x-4 mt-4">
-                            <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin className="hover:text-[#FFBA52]" size={20} />
+                        <div className="flex space-x-4 mt-4 items-center text-[#ECECEC]">
+                            <a href="https://www.linkedin.com/in/eduard-hernandez-ventos" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin className="hover:text-bleu" size={20} />
                             </a>
-                            <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                                <FaGithub className="hover:text-[#FFBA52]" size={20} />
+                            <a href="https://github.com/trosdesuru" target="_blank" rel="noopener noreferrer">
+                                <FaGithub className="hover:text-textSecondary" size={20} />
                             </a>
-                            <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                                <FaTwitter className="hover:text-[#FFBA52]" size={20} />
+                            <a href="https://wa.me/683584981" target="_blank" rel="noopener noreferrer">
+                                <FaWhatsapp className="hover:text-green-500" size={24} />
                             </a>
                         </div>
                     </div>
