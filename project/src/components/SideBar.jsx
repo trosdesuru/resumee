@@ -37,7 +37,7 @@ const Sidebar = ({ openSection }) => {
     }
 
     const toggleProfileCard = () => {
-        setIsProfileCardOpen(!isProfileCardOpen) // Alternar la visibilidad
+        setIsProfileCardOpen(!isProfileCardOpen)
     }
 
     const updateProfileCardPosition = (newPosition) => {
@@ -52,31 +52,37 @@ const Sidebar = ({ openSection }) => {
         <div style={{ width }} className="flex relative bg-background text-textPrimary mt-10 h-full border-r border-l border-border">
             <div className="flex flex-col h-full w-full">
 
-                <div className='flex flex-row items-center pl-4 pt-4 pb-4 hover:bg-bleu cursor-pointer' onClick={toggleProfileCard}>
-                    <RiInformation2Line className="mr-2 text-bleu" />
+                <div className='flex flex-row items-center pl-4 pt-4 pb-4 cursor-pointer hover:bg-gray hover:line'
+                    onClick={toggleProfileCard}>
+                    <RiInformation2Line className="mr-2 text-blue-400" />
                     <h2 className="text-sm font-doppioOne">Eduard Hernández</h2>
                 </div>
 
                 <div className="w-full border-t border-gray"></div>
 
                 <ul className="flex flex-col font-doppioOne text-sm">
-                    <li onClick={() => openSection('Experiencia')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
-                        <DiJavascript1 size={18} className="mr-2 text-yellowHover" /> Experiencia
+
+                    <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
+                        onClick={() => openSection('Experiencia')}>
+                        <DiJavascript1 className="mr-2 text-yellowHover" size={20} /> Experiencia
                     </li>
 
-                    <li onClick={() => openSection('Habilidades')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
-                        <FaReact size={18} className="mr-2 text-bleu" /> Habilidad
+                    <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
+                        onClick={() => openSection('Habilidades')}>
+                        <FaReact className="mr-2 text-bleu" size={20} /> Habilidad
                     </li>
 
-                    <li onClick={() => openSection('Proyectos')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
-                        <VscGithub size={18} className="mr-2 text-textPrimary" /> Proyectos
+                    <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
+                        onClick={() => openSection('Proyectos')}>
+                        <VscGithub className="mr-2 text-textPrimary" size={20} /> Proyectos
                     </li>
 
-                    <li onClick={() => openSection('Educación')} className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line">
+                    <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
+                        onClick={() => openSection('Educación')}>
                         <div className="relative flex items-center">
                             <div className="relative flex items-center justify-center mr-2">
-                                <p className="absolute flex items-center inset-0.7 justify-center w-3 h-3 bg-white rounded-full"></p>
-                                <FaHtml5 size={18} className="text-orange-500 relative z-10" />
+                                <p className="absolute flex items-center inset-0.7 justify-center w-3.5 h-3.5 bg-white rounded-full"></p>
+                                <FaHtml5 className="text-orange-500 relative z-10" size={22} />
                             </div>
                         </div>
                         Educación

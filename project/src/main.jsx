@@ -16,7 +16,7 @@ function logInfo(title, message) {
   )
 }
 
-logInfo('👋 Bienvenido/a al sitio web de Eduard Hernández!\nCV 1.2', '')
+logInfo('👋 Bienvenido/a mi sitio web!\nCV 1.2', '')
 logInfo('-> Created CV_1.0:', 'Project created(npm run build)\n\n- Vite + React\n- Tailwindcss\n- main.jsx\n- App.jsx\n')
 logInfo('-> Updated CV_1.1:', 'Setted Visual Structure\n')
 logInfo('-> Updated CV_1.2:', 'Setted activeTabs on EditorScreen\n')

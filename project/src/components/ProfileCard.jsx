@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import { FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+
+import { IoMailUnreadOutline, IoPhonePortraitOutline } from "react-icons/io5"
+import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa'
+import { BiHomeAlt2 } from "react-icons/bi"
 
 const ProfileCard = ({ position, onClose }) => {
     const [dragging, setDragging] = useState(false)
@@ -72,7 +75,7 @@ const ProfileCard = ({ position, onClose }) => {
                         Full-Stack Developer</p>
                 </div>
 
-                <div className="relative flex items-start">
+                <div className="relative flex flex-row justify-between items-start">
                     <div className="size-36 rounded-full bg-[#FFBA52] overflow-hidden mr-6">
                         <img
                             className="w-full h-full object-contain"
@@ -84,29 +87,43 @@ const ProfileCard = ({ position, onClose }) => {
                             }} />
                     </div>
 
-                    <div className="flex flex-col space-y-4 mt-4">
+                    <div className="flex flex-col justify-between space-y-3">
                         <div className="flex items-center space-x-2 text-[#ECECEC]">
-                            <FaEnvelope />
+                            <a href="mailto:eduardhernandezventos@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <IoMailUnreadOutline size={21} className="hover:text-[#FFBA52]" />
+                            </a>
                             <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>eduardhernandezventos@gmail.com</p>
                         </div>
                         <div className="flex items-center space-x-2 text-[#ECECEC]">
-                            <FaPhone />
+                            <IoPhonePortraitOutline size={21} />
                             <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>+34 683 584 981</p>
                         </div>
                         <div className="flex items-center space-x-2 text-[#ECECEC]">
-                            <FaMapMarkerAlt />
+                            <BiHomeAlt2 size={21} />
                             <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>Barcelona, España</p>
                         </div>
 
-                        <div className="flex space-x-4 mt-4 items-center text-[#ECECEC]">
-                            <a href="https://www.linkedin.com/in/eduard-hernandez-ventos" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin className="hover:text-bleu" size={20} />
+                        <div className="flex space-x-3 pt-2 items-center text-[#ECECEC]">
+                            <a className="social-icon hover:bg-white hover:text-[#0077B5] rounded-full p-1"
+                                href="https://www.linkedin.com/in/eduard-hernandez-ventos"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaLinkedin size={24} />
                             </a>
-                            <a href="https://github.com/trosdesuru" target="_blank" rel="noopener noreferrer">
-                                <FaGithub className="hover:text-textSecondary" size={20} />
+
+                            <a className="social-icon hover:bg-white hover:text-black rounded-full p-1"
+                                href="https://github.com/trosdesuru"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <FaGithub size={24} />
                             </a>
-                            <a href="https://wa.me/683584981" target="_blank" rel="noopener noreferrer">
-                                <FaWhatsapp className="hover:text-green-500" size={24} />
+
+                            <a className="social-icon hover:bg-[#25D366] hover:text-white rounded-full p-1.5"
+                                href="https://wa.me/683584981"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <FaWhatsapp size={26} />
                             </a>
                         </div>
                     </div>
