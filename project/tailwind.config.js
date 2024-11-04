@@ -16,6 +16,7 @@ export default {
         border: '#4B4B4B',
         input: '#474747',
         bar: '#1E1E1E',
+        cardBar: '#767676',
         editor: '#2E2E2E',
         tab: '#333333',
         highlight: '#007ACC',
@@ -29,7 +30,9 @@ export default {
       },
       fontFamily: {
         doppioOne: ['Doppio One', ...defaultTheme.fontFamily.sans],
-        firaCode: ['Fira Code', ...defaultTheme.fontFamily.sans]
+        firaCode: ['Fira Code', ...defaultTheme.fontFamily.sans],
+        jetbrains: ['JetBrains Mono', ...defaultTheme.fontFamily.sans],
+        robotomono: ['Roboto Mono', ...defaultTheme.fontFamily.sans]
       },
     },
   },

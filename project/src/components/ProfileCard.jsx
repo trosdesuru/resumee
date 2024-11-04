@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 
 const ProfileCard = ({ position, onClose }) => {
     const [dragging, setDragging] = useState(false)
@@ -31,59 +31,88 @@ const ProfileCard = ({ position, onClose }) => {
     }
 
     return (
-        <div
-            className="fixed"
+        <div className="fixed"
             style={{
                 left: position.x,
                 top: position.y,
                 width: '520px',
-                background: '#2c2c2c',
+                background: '#2B2B2B',
                 borderRadius: '8px',
-                boxShadow: '0 4px 10px rgba(255, 165, 0, 0.5)',
+                boxShadow: '0 0px 24px rgba(255, 186, 82, 0.28)',
                 zIndex: 1000,
+                color: 'white',
             }}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseUp}
-        >
-            <div
-                className="flex items-center bg-gray-800 text-white p-2 cursor-move"
-                onMouseDown={handleMouseDown}
-            >
-                <div className="flex space-x-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full cursor-pointer" onClick={handleClose} />
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full cursor-pointer" />
-                    <div className="w-3 h-3 bg-green-500 rounded-full cursor-pointer" />
+            onMouseLeave={handleMouseUp}>
+
+            <div className="flex items-center bg-gray-800 cursor-move rounded-t-lg"
+                onMouseDown={handleMouseDown}>
+                <div className="bg-cardBar p-2 w-full h-[26px] rounded-tl-lg rounded-tr-lg">
+                    <div className="flex space-x-2">
+                        <div
+                            className="w-3 h-3 rounded-full cursor-pointer bg-red-500"
+                            onClick={handleClose} />
+                        <div className="w-3 h-3 rounded-full cursor-pointer bg-yellow-400" />
+                        <div className="w-3 h-3 rounded-full cursor-pointer bg-green-500" />
+                    </div>
                 </div>
-                <h2 className="text-lg font-semibold ml-2">Tu Nombre</h2>
             </div>
-            
-            <div className="p-4 text-white">
-                <img
-                    src="URL_DE_TU_FOTO"
-                    alt="Tu nombre"
-                    className="w-16 h-16 rounded-full mb-4"
-                />
-                <h3 className="font-semibold">Puestos Laborales</h3>
-                <ul>
-                    <li>Diseñador Web</li>
-                    <li>Diseño UX</li>
-                    <li>Full Stack</li>
-                </ul>
-                <h4 className="mt-2 font-semibold">Información de Contacto</h4>
-                <p>Email: tuemail@example.com</p>
-                <p>Teléfono: +123456789</p>
-                <div className="flex space-x-2 mt-2">
-                    <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin size={18} />
-                    </a>
-                    <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                        <FaGithub size={18} />
-                    </a>
-                    <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter size={18} />
-                    </a>
+
+            <div className="p-6">
+                <div className="ml-4 mb-6">
+                    <h2 className="text-2xl font-jetbrains font-light">Eduard Hernández Ventós</h2>
+                    <p className="font-robotomono font-light text-sm text-[#6FFFFF]">
+                        UX | UI Designer
+                        <span className='text-[#FFBA52] mx-2 font-jetbrains'>|</span>
+                        Web Designer
+                        <span className='text-[#FFBA52] mx-2 font-jetbrains'>|</span>
+                        Full-Stack Developer</p>
                 </div>
+
+                <div className="relative flex items-start">
+                    <div className="size-36 rounded-full bg-[#FFBA52] overflow-hidden mr-6">
+                        <img
+                            className="w-full h-full object-contain"
+                            src="./imgProfile.png"
+                            alt="Eduard Hernández Ventós"
+                            style={{
+                                transform: 'scale(1.5)',
+                                marginTop: '42px'
+                            }} />
+                    </div>
+
+                    <div className="flex flex-col space-y-4 mt-4">
+                        <div className="flex items-center space-x-2">
+                            <FaEnvelope />
+                            <p className='text-sm font-jetbrains font-thin'>eduardhernandezventos@gmail.com</p>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <FaPhone />
+                            <p className='text-sm font-jetbrains font-thin'>+34 683 584 981</p>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <FaMapMarkerAlt />
+                            <p className='text-sm font-jetbrains font-thin'>Barcelona, España</p>
+                        </div>
+
+                        <div className="flex space-x-4 mt-4">
+                            <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin className="hover:text-[#FFBA52]" size={20} />
+                            </a>
+                            <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
+                                <FaGithub className="hover:text-[#FFBA52]" size={20} />
+                            </a>
+                            <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer">
+                                <FaTwitter className="hover:text-[#FFBA52]" size={20} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex items-center bg-gray-800 rounded-b-lg">
+                <div className="bg-cardBar w-full h-[16px] rounded-bl-lg rounded-br-lg"></div>
             </div>
         </div>
     )

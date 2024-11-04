@@ -1,5 +1,4 @@
 import React from 'react'
-// import SearchBar from './SearchBar'
 
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
 
@@ -19,6 +18,12 @@ const Header = () => {
         <SearchBar />
       </div> */}
 
+      <div className="flex flex-1 mx-4 justify-center">
+        <input className="w-2/4 text-textPrimary text-sm px-3 py-1 rounded-md bg-gray"
+          type="text"
+          placeholder="currículum de Eduard Hernández..." />
+      </div>
+
       <div className='flex items-center space-x-2 mr-4'>
         <button alt="button" className='text-textPrimary hover:text-white transition-all'><BiDockLeft size={20} /></button>
         <button alt="button" className='text-textPrimary hover:text-white transition-all'><BiDockBottom size={20} /></button>
@@ -31,5 +36,4 @@ const Header = () => {
 
 export default Header
 
-// TODO Fix SearchBar imporations, error deploying project on Vercel
 // TODO add arrows on the left side from SearchBar
