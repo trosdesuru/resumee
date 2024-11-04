@@ -40,11 +40,13 @@ function App() {
 
   return (
     <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
-      <Analytics />
       <Header />
+      <Analytics />
       <div className="flex flex-1 overflow-hidden">
         <SidebarIcons />
+        <Analytics />
         <SideBar openSection={openSection} />
+        <Analytics />
 
         <div className="flex flex-col flex-1 overflow-hidden">
           <TabBar openTabs={openTabs} activeTab={activeTab} setActiveTab={setActiveTab} closeTab={closeTab} />
