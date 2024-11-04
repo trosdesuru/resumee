@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { Analytics } from "@vercel/analytics/react"
+import TechsMessage from './components/TechsMessage'
+import WelcomeMessage from './components/WelcomeMessage'
+import ProfileMessage from './components/ProfileMessage'
 
 import BottomBar from './components/BottomBar'
 import EditorScreen from './components/EditorScreen'
@@ -15,6 +18,19 @@ function App() {
   const [openTabs, setOpenTabs] = useState([])
   const [activeTab, setActiveTab] = useState(null)
 
+  const [currentMessage, setCurrentMessage] = useState('welcome')
+
+  const handleNext = () => {
+    if (currentMessage === 'welcome') {
+      setCurrentMessage('techs')
+
+    } else setCurrentMessage('profile')
+  }
+
+  const handleCloseIntro = () => {
+    setCurrentMessage(null)
+  }
+  
   const openSection = (section) => {
     if (!openTabs.includes(section)) {
       setOpenTabs(prevTabs => [...prevTabs, section])
@@ -39,23 +55,29 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
-      <Header />
-      <Analytics />
-      <div className="flex flex-1 overflow-hidden">
-        <SidebarIcons />
-        <Analytics />
-        <SideBar openSection={openSection} />
-        <Analytics />
+    <>
+      {currentMessage === 'welcome' && <WelcomeMessage onNext={handleNext} />}
+      {currentMessage === 'techs' && <TechsMessage onNext={handleNext} />}
+      {currentMessage === 'profile' && <ProfileMessage onClose={handleCloseIntro} />}
 
-        <div className="flex flex-col flex-1 overflow-hidden">
-          <TabBar openTabs={openTabs} activeTab={activeTab} setActiveTab={setActiveTab} closeTab={closeTab} />
-          <EditorScreen activeTab={activeTab} />
-          <Terminal />
+      <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
+        <Header />
+        <Analytics />
+        <div className="flex flex-1 overflow-hidden">
+          <SidebarIcons />
+          <Analytics />
+          <SideBar openSection={openSection} />
+          <Analytics />
+
+          <div className="flex flex-col flex-1 overflow-hidden">
+            <TabBar openTabs={openTabs} activeTab={activeTab} setActiveTab={setActiveTab} closeTab={closeTab} />
+            <EditorScreen activeTab={activeTab} />
+            <Terminal />
+          </div>
         </div>
+        <BottomBar />
       </div>
-      <BottomBar />
-    </div>
+    </>
   )
 }
 

@@ -82,7 +82,7 @@ const Sidebar = ({ openSection }) => {
                         <div className="relative flex items-center">
                             <div className="relative flex items-center justify-center mr-2">
                                 <p className="absolute flex items-center inset-0.7 justify-center w-3.5 h-3.5 bg-white rounded-full"></p>
-                                <FaHtml5 className="text-orange-500 relative z-10" size={22} />
+                                <FaHtml5 className="text-orange-500 relative" size={22} />
                             </div>
                         </div>
                         Educación
