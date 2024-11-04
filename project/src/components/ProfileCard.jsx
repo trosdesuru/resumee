@@ -61,7 +61,9 @@ const ProfileCard = ({ position, onClose }) => {
 
             <div className="p-6">
                 <div className="ml-4 mb-6">
+
                     <h2 className="text-2xl font-jetbrains font-light">Eduard Hernández Ventós</h2>
+
                     <p className="font-robotomono font-light text-sm text-[#6FFFFF]">
                         UX | UI Designer
                         <span className='text-[#FFBA52] mx-2 font-jetbrains'>|</span>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Analytics } from "@vercel/analytics/react"
 
 import BottomBar from './components/BottomBar'
 import EditorScreen from './components/EditorScreen'
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
+      <Analytics />
       <Header />
       <div className="flex flex-1 overflow-hidden">
         <SidebarIcons />
