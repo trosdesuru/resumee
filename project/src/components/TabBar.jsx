@@ -24,17 +24,18 @@ function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
                     >
                         <h2 className='font-firaCode text-xs'>{tab}</h2>
                         <button
+                            alt="button"
                             onClick={(event) => { event.stopPropagation(), closeTab(tab) }}
                             className='font-mono font-extralight text-sm text-white ml-2'>x</button>
                     </div>
                 ))}
             </div>
             <div className='flex items-center space-x-2 mx-4'>
-                <button className='text-textPrimary hover:text-white transition-all'><VscRunAll size={17} /></button>
-                <button className='text-textPrimary hover:text-white transition-all'><GoGitCompare size={17} /></button>
-                <button className='text-textPrimary hover:text-white transition-all'><FaTerminal size={17} /></button>
-                <button className='text-textPrimary hover:text-white transition-all'><BiDockBottom size={17} /></button>
-                <button className='text-textPrimary hover:text-white transition-all'><BsThreeDots size={17} /></button>
+                <button alt="button" className='text-textPrimary hover:text-white transition-all'><VscRunAll size={17} /></button>
+                <button alt="button" className='text-textPrimary hover:text-white transition-all'><FaTerminal size={17} /></button>
+                <button alt="button" className='text-textPrimary hover:text-white transition-all'><BiDockBottom size={17} /></button>
+                <button alt="button" className='text-textPrimary hover:text-white transition-all'><BsThreeDots size={17} /></button>
+                <button alt="button" className='text-textPrimary hover:text-white transition-all'><GoGitCompare size={17} /></button>
             </div>
         </div>
 

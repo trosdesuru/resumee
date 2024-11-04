@@ -36,7 +36,7 @@ const ProfileCard = ({ position, onClose }) => {
             style={{
                 left: position.x,
                 top: position.y,
-                width: '300px',
+                width: '520px',
                 background: '#2c2c2c',
                 borderRadius: '8px',
                 boxShadow: '0 4px 10px rgba(255, 165, 0, 0.5)',
@@ -75,13 +75,13 @@ const ProfileCard = ({ position, onClose }) => {
                 <p>Teléfono: +123456789</p>
                 <div className="flex space-x-2 mt-2">
                     <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin size={24} />
+                        <FaLinkedin size={18} />
                     </a>
                     <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                        <FaGithub size={24} />
+                        <FaGithub size={18} />
                     </a>
                     <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter size={24} />
+                        <FaTwitter size={18} />
                     </a>
                 </div>
             </div>
