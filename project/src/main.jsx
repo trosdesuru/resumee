@@ -12,8 +12,7 @@ root.render(<StrictMode><App /></StrictMode>)
 function logInfo(title, message) {
   console.info(`\n%c${title}%c\n\n${message}`,
     'color: #ffffff; background-color: #007acc; font-size: 16px; font-weight: bold; padding: 8px; border-radius: 4px;',
-    'color: #ffffff; font-size: 14px'
-  )
+    'color: #ffffff; font-size: 14px')
 }
 
 logInfo('👋 Bienvenido/a mi sitio web!\nCV 1.2', '')
