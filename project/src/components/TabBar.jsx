@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { GoGitCompare } from "react-icons/go"
-import { FaTerminal } from "react-icons/fa"
-import { BiDockBottom } from "react-icons/bi"
-import { VscRunAll } from "react-icons/vsc"
-import { BsThreeDots } from "react-icons/bs"
+import { GoGitCompare } from 'react-icons/go'
+import { FaTerminal } from 'react-icons/fa'
+import { BiDockBottom } from 'react-icons/bi'
+import { VscRunAll } from 'react-icons/vsc'
+import { BsThreeDots } from 'react-icons/bs'
 
 function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
     console.debug('tap bar -> call')
@@ -24,18 +24,18 @@ function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
                     >
                         <h2 className='font-firaCode text-xs'>{tab}</h2>
                         <button
-                            alt="button"
+                            alt='button'
                             onClick={(event) => { event.stopPropagation(), closeTab(tab) }}
                             className='font-mono font-extralight text-sm text-white ml-2'>x</button>
                     </div>
                 ))}
             </div>
             <div className='flex items-center space-x-2 mx-4'>
-                <button alt="button" className='text-textPrimary hover:text-white transition-all'><VscRunAll size={17} /></button>
-                <button alt="button" className='text-textPrimary hover:text-white transition-all'><FaTerminal size={17} /></button>
-                <button alt="button" className='text-textPrimary hover:text-white transition-all'><BiDockBottom size={17} /></button>
-                <button alt="button" className='text-textPrimary hover:text-white transition-all'><BsThreeDots size={17} /></button>
-                <button alt="button" className='text-textPrimary hover:text-white transition-all'><GoGitCompare size={17} /></button>
+                <button alt='button' className='text-textPrimary hover:text-white transition-all'><VscRunAll size={17} /></button>
+                <button alt='button' className='text-textPrimary hover:text-white transition-all'><FaTerminal size={17} /></button>
+                <button alt='button' className='text-textPrimary hover:text-white transition-all'><BiDockBottom size={17} /></button>
+                <button alt='button' className='text-textPrimary hover:text-white transition-all'><BsThreeDots size={17} /></button>
+                <button alt='button' className='text-textPrimary hover:text-white transition-all'><GoGitCompare size={17} /></button>
             </div>
         </div>
 
@@ -43,6 +43,3 @@ function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
 }
 
 export default TabBar
-
-// TODO first option selected will be selected, then just open tabs
-// TODO moving tabs when selected

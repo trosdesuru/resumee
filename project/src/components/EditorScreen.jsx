@@ -1,20 +1,28 @@
 import React from 'react'
+import TabExperience from './TabExperience'
+import TabSkills from './TabSkills'
+import TabProjects from './TabProjects'
+import TabEducation from './TabEducation'
 
 import { SiVisualstudiocode } from "react-icons/si"
 
-function EditorScreen({ activeTab }) {
+function EditorScreen({ activeTab, experience, skills, projects, education }) {
     console.debug('editor screen -> call')
 
     return (
-        <div className="flex-1 p-4 overflow-y-auto overflow-x-hidden bg-gray flex items-center justify-center">
-            {activeTab ? (
-                <div className="text-textPrimary mb-4">
-                    <h2 className="text-2xl font-semibold">{activeTab}</h2>
-                    <p>Contenido de {activeTab}</p>
+        <div className="flex-1 relative p-4 overflow-y-auto bg-gray">
+            {!activeTab && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <SiVisualstudiocode className="text-editor text-[30vw]" />
                 </div>
-            ) : (
-                <SiVisualstudiocode className="text-editor text-[30vw]" />
             )}
+
+            <div className="relative z-10 text-textPrimary">
+                {activeTab === 'experience' && experience && <TabExperience data={experience} />}
+                {activeTab === 'skills' && skills && <TabSkills data={skills} />}
+                {activeTab === 'projects' && projects && <TabProjects data={projects} />}
+                {activeTab === 'education' && education && <TabEducation data={education} />}
+            </div>
         </div>
     )
 }

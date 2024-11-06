@@ -63,22 +63,22 @@ const Sidebar = ({ openSection }) => {
                 <ul className="flex flex-col font-doppioOne text-sm">
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
-                        onClick={() => openSection('Experiencia')}>
+                        onClick={() => openSection('experience')}>
                         <DiJavascript1 className="mr-2 text-yellowHover" size={20} /> Experiencia
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
-                        onClick={() => openSection('Habilidades')}>
+                        onClick={() => openSection('skills')}>
                         <FaReact className="mr-2 text-bleu" size={20} /> Habilidad
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
-                        onClick={() => openSection('Proyectos')}>
+                        onClick={() => openSection('projects')}>
                         <VscGithub className="mr-2 text-textPrimary" size={20} /> Proyectos
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
-                        onClick={() => openSection('Educación')}>
+                        onClick={() => openSection('education')}>
                         <div className="relative flex items-center">
                             <div className="relative flex items-center justify-center mr-2">
                                 <p className="absolute flex items-center inset-0.7 justify-center w-3.5 h-3.5 bg-white rounded-full"></p>

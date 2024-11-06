@@ -31,3 +31,5 @@ const WelcomeMessage = ({ onNext }) => (
 )
 
 export default WelcomeMessage
+
+// TODO agrandar font & reemplazar texto. 

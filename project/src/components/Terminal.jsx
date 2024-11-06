@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import { FiChevronRight } from 'react-icons/fi'
 import { VscChevronDown } from 'react-icons/vsc'
 
 const Terminal = () => {

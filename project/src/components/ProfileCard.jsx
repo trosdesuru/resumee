@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { IoMailUnreadOutline, IoPhonePortraitOutline } from "react-icons/io5"
-import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord, FaDev } from 'react-icons/fa'
 import { BiHomeAlt2 } from "react-icons/bi"
 
 const ProfileCard = ({ position, onClose }) => {
@@ -67,7 +67,7 @@ const ProfileCard = ({ position, onClose }) => {
 
                     <h2 className="text-2xl font-jetbrains font-light">Eduard Hernández Ventós</h2>
 
-                    <p className="font-robotomono font-light text-sm text-[#6FFFFF]">
+                    <p className="font-robotomono font-normal text-sm text-[#6FFFFF]">
                         UX | UI Designer
                         <span className='text-[#FFBA52] mx-2 font-jetbrains'>|</span>
                         Web Designer
@@ -79,7 +79,7 @@ const ProfileCard = ({ position, onClose }) => {
                     <div className="size-36 rounded-full bg-[#FFBA52] overflow-hidden mr-6">
                         <img
                             className="w-full h-full object-contain"
-                            src="./imgProfile.png"
+                            src="./img/imgProfile.png"
                             alt="Eduard Hernández Ventós"
                             style={{
                                 transform: 'scale(1.5)',
@@ -90,7 +90,7 @@ const ProfileCard = ({ position, onClose }) => {
                     <div className="flex flex-col justify-between space-y-3">
                         <div className="flex items-center space-x-2 text-[#ECECEC]">
                             <a href="mailto:eduardhernandezventos@gmail.com" target="_blank" rel="noopener noreferrer">
-                                <IoMailUnreadOutline size={21} className="hover:text-[#FFBA52]" />
+                                <IoMailUnreadOutline size={21} className="hover:text-[#6FFFFF]" />
                             </a>
                             <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>eduardhernandezventos@gmail.com</p>
                         </div>
@@ -107,8 +107,7 @@ const ProfileCard = ({ position, onClose }) => {
                             <a className="social-icon hover:bg-white hover:text-[#0077B5] rounded-full p-1"
                                 href="https://www.linkedin.com/in/eduard-hernandez-ventos"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                                rel="noopener noreferrer">
                                 <FaLinkedin size={24} />
                             </a>
 
@@ -124,6 +123,20 @@ const ProfileCard = ({ position, onClose }) => {
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 <FaWhatsapp size={26} />
+                            </a>
+
+                            <a className="social-icon hover:bg-violet-500 hover:text-white rounded-full p-1.5"
+                                href="https://discord.com/users/eduhv"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <FaDiscord size={26} />
+                            </a>
+
+                            <a className="social-icon hover:bg-white hover:text-black rounded-full p-1.5"
+                                href="https://dev.to/eduhvdev"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <FaDev size={26} />
                             </a>
                         </div>
                     </div>
