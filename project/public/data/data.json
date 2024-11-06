@@ -1,0 +1,45 @@
+{
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Tech Company",
+      "location": "Remote",
+      "start_date": "January 2021",
+      "end_date": "Present",
+      "description": [
+        "Developed and maintained web applications using React.",
+        "Collaborated with a team to enhance user experience.",
+        "Implemented API integrations to streamline data flow."
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Web Solutions Inc.",
+      "location": "New York, NY",
+      "start_date": "June 2018",
+      "end_date": "December 2020",
+      "description": [
+        "Designed and developed responsive websites for clients.",
+        "Worked with cross-functional teams to deliver projects on time.",
+        "Optimized website performance and improved loading speeds."
+      ]
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "CSS",
+    "HTML"
+  ],
+  "projects": [
+    "app-cities"
+  ],
+  "education": [
+    {
+      "institution": "University of Tech",
+      "degree": "B.Sc. in Computer Science",
+      "year": "2014 - 2018"
+    }
+  ]
+}
