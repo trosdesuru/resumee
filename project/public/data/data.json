@@ -1,45 +1,169 @@
 {
   "experience": [
     {
-      "title": "Software Engineer",
-      "company": "Tech Company",
+      "title": "Web Designer",
+      "company": "Freelance",
       "location": "Remote",
-      "start_date": "January 2021",
-      "end_date": "Present",
+      "start_date": "Marzo 2019",
+      "end_date": "Octubre 2023",
       "description": [
-        "Developed and maintained web applications using React.",
-        "Collaborated with a team to enhance user experience.",
-        "Implemented API integrations to streamline data flow."
+        "Como diseñador web freelance, he trabajado en una variedad de proyectos, desde la creación de sitios web para pequeñas empresas hasta el diseño de aplicaciones web interactivas. Mi enfoque se centra en la usabilidad y la experiencia del usuario, garantizando que cada proyecto no solo sea visualmente atractivo, sino también funcional y fácil de usar."
       ]
     },
     {
-      "title": "Web Developer",
-      "company": "Web Solutions Inc.",
-      "location": "New York, NY",
-      "start_date": "June 2018",
-      "end_date": "December 2020",
+      "title": "UX | UI Designer",
+      "company": "Valerdat",
+      "location": "Barcelona | 22@ Poblenou",
+      "start_date": "Enero 2023",
+      "end_date": "June 2023",
       "description": [
-        "Designed and developed responsive websites for clients.",
-        "Worked with cross-functional teams to deliver projects on time.",
-        "Optimized website performance and improved loading speeds."
+        "·Investigación del usuario: Recopilar datos sobre las necesidades y comportamientos de los usuarios para crear productos más centrados en el cliente.",
+        "·Desarrollo de wireframes y prototipos: Crear bocetos y maquetas iniciales utilizando herramientas como Figma para representar la estructura y el flujo de las interfaces.",
+        "·Creación de mockups: Realizar maquetas detalladas para definir cómo se verán y funcionarán los productos digitales en diferentes dispositivos.",
+        "·Optimización del diseño: Ajustar y refinar el diseño según los requisitos específicos del proyecto, manteniendo el enfoque en la facilidad de uso y la estética.",
+        "·Freelancing y autogestión: Gestionar proyectos de manera autónoma, manteniendo una comunicación efectiva con el equipo para cumplir los objetivos dentro del plazo establecido."
+      ]
+    },
+    {
+      "title": "Web Designer",
+      "company": "Akrai Studio",
+      "location": "Remote",
+      "start_date": "Noviembre 2021",
+      "end_date": "Septiembre 2022",
+      "description": [
+        "·Creación de prototipos y maquetas visuales utilizando herramientas como Figma, asegurando una alineación con las expectativas del cliente y las mejores prácticas de UX.",
+        "·Colaboración en Proyectos: Trabajé en estrecha colaboración con desarrolladores backend y otros diseñadores para llevar a cabo proyectos desde la conceptualización hasta la entrega final.",
+        "· Optimización SEO: Implementación de mejores prácticas de SEO en el diseño de los sitios web para mejorar la visibilidad en los motores de búsqueda.",
+        "· Gestión de Proyectos: Participación en reuniones con clientes para entender sus necesidades y proporcionar actualizaciones sobre el progreso del proyecto."
+      ]
+    },
+    {
+      "title": "Web & Graphic Designer",
+      "company": "meKambio",
+      "location": "Remote",
+      "start_date": "Setiembre 2021",
+      "end_date": "Febrero 2022",
+      "description": [
+        "·Diseño y Desarrollo Web: Creación y mantenimiento de sitios web atractivos",
+        "· Diseño Gráfico: Desarrollo de materiales gráficos, incluyendo logotipos, infografías y contenido para redes sociales, alineados con la identidad de marca de Mekambio.",
+        "· Colaboración en Proyectos: Trabajé estrechamente con equipos multidisciplinarios para conceptualizar y ejecutar campañas visuales que comunicaban efectivamente nuestros valores de sostenibilidad."
       ]
     }
   ],
   "skills": [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "CSS",
-    "HTML"
+    {
+      "category": "Desarrollo Web",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "category": "Diseño UX/UI",
+      "skills": [
+        "UX Research",
+        "Wireframing y Prototipado (Figma, Adobe XD, Sketch)",
+        "Design Systems",
+        "Responsive Web Design",
+        "Visual Design (Color, Tipografía, Jerarquía Visual)"
+      ]
+    },
+    {
+      "category": "Gestión de Proyectos",
+      "skills": [
+        "Gestión de Proyectos (Trello, Asana, Jira)",
+        "Agile Methodologies (Scrum, Kanban)",
+        "Comunicación Efectiva con Clientes y Equipos"
+      ]
+    },
+    {
+      "category": "Herramientas Técnicas",
+      "skills": [
+        "Version Control (Git, GitHub, GitLab)",
+        "SEO Técnico",
+        "Testing y Adaptación de Diseño según Feedback"
+      ]
+    }
   ],
   "projects": [
-    "app-cities"
+    {
+      "title": "App Cities",
+      "description": "Cities es una aplicación diseñada para explorar, crear y gestionar eventos en diferentes ciudades. Su objetivo principal es conectar a los usuarios con eventos y ofrecer herramientas para que puedan buscar, crear y modificar eventos según su ubicación y otros detalles clave. Te invitamos a descubrir más sobre este proyecto visitando la pestaña de Proyectos, donde podrás explorar cómo Cities facilita la conexión entre personas y eventos en tiempo real.",
+      "technologies": [
+        "HTML / CSS / JS",
+        "React",
+        "TailwindCSS",
+        "Node",
+        "Vite",
+        "Express",
+        "Chai",
+        "Mocha",
+        "BcryptJS",
+        "MongoDB",
+        "Mongoose",
+        "Jason Web Token(JWT)"
+      ],
+      "images": [
+        "/img/cities-1.png",
+        "/img/cities-3.png",
+        "/img/cities-2.png",
+        "/img/cities-4.png"
+      ],
+      "url": "https://github.com/trosdesuru/cities-app/blob/develop/project/doc/README.md"
+    }
   ],
   "education": [
-    {
-      "institution": "University of Tech",
-      "degree": "B.Sc. in Computer Science",
-      "year": "2014 - 2018"
-    }
-  ]
+  {
+    "institution": "42 Barcelona",
+    "degree": "Estudiante de Programación y Desarrollo de Software",
+    "year": "Oct. 2023 - Dic. 2025",
+    "description": "Programa intensivo donde se aprenden lenguajes como C, C++, Python y tecnologías web mediante un enfoque basado en proyectos. Desarrollé habilidades en resolución de problemas, trabajo en equipo, y programación orientada a objetos.",
+    "skills": [
+      "Programación en C, C++ y Python",
+      "Resolución de problemas",
+      "Trabajo en equipo",
+      "Git",
+      "Seguridad informática básica"
+    ]
+  },
+  {
+    "institution": "ISDI Coders",
+    "degree": "Full-Stack Web Developer",
+    "year": "May. 2024 - Oct. 2024",
+    "description": "Formación intensiva en desarrollo full-stack, trabajando con tecnologías como React, Node.js, MongoDB y metodologías ágiles. Desarrollo de aplicaciones completas con enfoque en UX/UI.",
+    "skills": [
+      "React.js",
+      "Node.js, MongoDB",
+      "Metodologías ágiles",
+      "Git, GitHub"
+    ]
+  },
+  {
+    "institution": "Universitat Oberta de Catalunya",
+    "degree": "Interacción Digital & Multimedia, Diseño Gráfico",
+    "year": "2012 - 2020",
+    "description": "Estudios centrados en el diseño web, UX/UI y herramientas como Figma. Desarrollo de proyectos web utilizando tecnologías como HTML, CSS, WordPress y diseño responsivo.",
+    "skills": [
+      "Figma",
+      "Diseño web y UX/UI",
+      "WordPress",
+      "HTML, CSS"
+    ]
+  },
+  {
+    "institution": "Upgrade Hub",
+    "degree": "UX/UI Design",
+    "year": "Sept. 2022 - Dic. 2022",
+    "description": "Estudios centrados en investigación UX, diseño de interfaces y prototipado con herramientas como Figma. Enfoque en mejorar la experiencia del usuario a través de un diseño intuitivo y accesible.",
+    "skills": [
+      "UX Research",
+      "Wireframing y Prototipado",
+      "Figma",
+      "User Experience Design"
+    ]
+  }
+]
 }
