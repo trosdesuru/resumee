@@ -6,7 +6,7 @@ const WelcomeMessage = ({ onNext }) => (
         <div className="p-6 rounded-lg text-white shadow-lg flex flex-col justify-center max-w-md mx-auto">
             <h2 className="text-3xl font-jetbrains mb-4 text-start">¡Bienvenido/a!</h2>
 
-            <p className="font-jetbrains text-md text-left">
+            <p className="font-jetbrains text-sm text-left">
                 Muy buenas! Mi nombre es Eduard Hernández,
                 desarrollador <span className="bg-gray text-yellow-400 px-1 py-0.5 rounded-md font-robotomono">
                     full-satck

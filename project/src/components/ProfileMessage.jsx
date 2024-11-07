@@ -6,8 +6,8 @@ const ProfileMessage = ({ onClose }) => {
             <div
                 className="tooltip-container"
                 style={{
-                    top: '60px',
-                    left: '200px',
+                    top: '50px',
+                    left: '50px',
                 }}
             >
                 <p className="text-sm font-jetbrains font-light text-white">
@@ -17,7 +17,7 @@ const ProfileMessage = ({ onClose }) => {
                     onClick={onClose}>
                     go!
                 </button>
-                <div className="tooltip-arrow mt-10"></div>
+                <div className="tooltip-arrow mt-200"></div>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ function EditorScreen({ activeTab, experience, skills, projects, education }) {
     console.debug('editor screen -> call')
 
     return (
-        <div className="flex-1 relative p-4 overflow-y-auto bg-gray">
+        <div className="flex-1 relative p-4 bg-gray overflow-auto">
             {!activeTab && (
                 <div className="absolute inset-0 flex items-center justify-center">
                     <SiVisualstudiocode className="text-editor text-[30vw]" />

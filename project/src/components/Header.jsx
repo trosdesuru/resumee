@@ -8,7 +8,7 @@ const Header = () => {
   console.debug('editor bar -> call')
 
   return (
-    <div className='fixed top-0 w-full flex items-center h-10 justify-between bg-background border-b border-border z-10'>
+    <div className='fixed flex top-0 w-full items-center h-10 justify-between bg-background border-b border-border z-10'>
 
       <div className='flex items-center space-x-2 ml-2'>
         <button alt="button" className='size-3 bg-red-500 rounded-full hover:bg-red-700 transition-all'></button>

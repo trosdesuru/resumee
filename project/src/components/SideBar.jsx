@@ -6,7 +6,7 @@ import { RiInformation2Line } from "react-icons/ri"
 import { DiJavascript1 } from "react-icons/di"
 import { VscGithub } from 'react-icons/vsc'
 
-const Sidebar = ({ openSection }) => {
+const Sidebar = ({ openSection, onClose }) => {
     console.debug('side bar -> call')
 
     const [width, setWidth] = useState(192)
@@ -23,11 +23,13 @@ const Sidebar = ({ openSection }) => {
         const doDrag = (event) => {
             const newWidth = Math.max(192, Math.min(500, width + (event.clientX - startX)))
             console.debug('actual width:', newWidth)
+
             setWidth(newWidth)
         }
 
         const stopDrag = () => {
             setIsDragging(false)
+            
             document.removeEventListener('mousemove', doDrag)
             document.removeEventListener('mouseup', stopDrag)
         }
@@ -49,7 +51,7 @@ const Sidebar = ({ openSection }) => {
     }
 
     return (
-        <div style={{ width }} className="flex relative bg-background text-textPrimary mt-10 h-full border-r border-l border-border">
+        <div style={{ width }} className="sm:flex flex-col bg-background text-textPrimary mt-10 h-full border-r border-l border-border">
             <div className="flex flex-col h-full w-full">
 
                 <div className='flex flex-row items-center pl-4 pt-4 pb-4 cursor-pointer hover:bg-gray hover:line'

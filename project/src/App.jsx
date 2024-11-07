@@ -25,6 +25,9 @@ function App() {
   const [projects, setProjects] = useState(null)
   const [education, setEducation] = useState(null)
 
+  const [openSidebar, setOpenSidebar] = useState(false)
+  const toggleSidebar = () => setOpenSidebar(!openSidebar)
+
 
   useEffect(() => {
     fetch('/data/data.json')
@@ -84,10 +87,13 @@ function App() {
       <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
         <Header />
         <Analytics />
+
         <div className="flex flex-1 overflow-hidden">
-          <SidebarIcons />
+          <SidebarIcons toggleSidebar={toggleSidebar} />
           <Analytics />
-          <SideBar openSection={openSection} />
+          {openSidebar && (
+            <SideBar onClose={toggleSidebar} openSection={openSection} />
+          )}
           <Analytics />
 
           <div className="flex flex-col flex-1 overflow-hidden">

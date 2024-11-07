@@ -6,7 +6,7 @@ const TechsMessage = ({ onNext }) => {
             <div
                 className="tooltip-container"
                 style={{
-                    top: '420px',
+                    top: '330px',
                     left: '60px',
                 }}
             >
