@@ -34,7 +34,7 @@ const ProfileCard = ({ position, onClose }) => {
     }
 
     return (
-        <div className="fixed"
+        <div className="fixed sm:w-full sm:mx-2"
             style={{
                 left: position.x,
                 top: position.y,

@@ -6,7 +6,7 @@ import { RiInformation2Line } from "react-icons/ri"
 import { DiJavascript1 } from "react-icons/di"
 import { VscGithub } from 'react-icons/vsc'
 
-const Sidebar = ({ openSection, onClose }) => {
+const Sidebar = ({ openSection }) => {
     console.debug('side bar -> call')
 
     const [width, setWidth] = useState(192)

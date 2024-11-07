@@ -13,11 +13,9 @@ const SidebarIcons = ({ toggleSidebar }) => {
   console.debug('side bar icons -> call')
 
   return (
-    <div className="flex flex-col p-3 mt-10 space-y-4 h-full overflow-y-auto">
+    <div className="flex flex-col p-3 mt-10 space-y-4 h-full overflow-y-visible">
       <div className="flex flex-col items-center space-y-4">
-        <div className='cursor-pointer'>
-          <AiOutlineFile onClick={toggleSidebar} className="text-textPrimary text-2xl hover:text-blue-400 transition duration-200" />
-        </div>
+        <AiOutlineFile onClick={toggleSidebar} className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
         <AiOutlineSearch className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
         <AiOutlineCode className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
         <VscSourceControl className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
