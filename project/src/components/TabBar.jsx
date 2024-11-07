@@ -12,7 +12,7 @@ function TabBar({ openTabs, closeTab, activeTab, setActiveTab }) {
     if (openTabs.length === 0) return null
 
     return (
-        <div className='flex mt-10 mr-4 w-full font-doppioOne text-textPrimary justify-between'>
+        <div className='flex mt-10 mr-4 w-full font-doppioOne text-textPrimary justify-between overflow-y-auto'>
             <div className='flex flex-row justify-between'>
                 {openTabs.map((tab) => (
                     <div

@@ -18,7 +18,7 @@ const Header = () => {
 
       {/* <div className='flex-1'><SearchBar /></div> */}
 
-      <div className="flex flex-1 mx-4 justify-center">
+      <div className="hidden sm:flex flex-1 mx-4 justify-center">
         <input className="w-2/4 text-textPrimary text-sm px-3 py-1 rounded-md bg-gray"
           type="text"
           placeholder="currículum de Eduard Hernández..." />

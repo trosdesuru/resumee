@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Education({ data }) {
   return (
@@ -44,7 +44,7 @@ function Education({ data }) {
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
-export default Education;
+export default Education

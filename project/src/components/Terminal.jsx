@@ -18,7 +18,7 @@ const Terminal = () => {
   }
 
   return (
-    <div className="w-full text-textSecondary border-t border-vs_test h-48 font-mono flex flex-col">
+    <div className=" w-full text-textSecondary border-t border-vs_test h-48 font-mono hidden sm:flex flex-col">
       <div className="flex items-center justify-between bg-gray-800 text-gray-400 px-4 py-2 border-b border-border">
         <div className="flex items-center space-x-2">
           <VscChevronDown className="text-sm" />

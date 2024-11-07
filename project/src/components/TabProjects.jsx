@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa'
 
 function TabProjects({ data }) {
   return (
-    <div className="bg-background p-4 mx-6 mt-12 border-t border-t-bleu rounded-md"
+    <div className="bg-background p-4 sm:mx-6 mt-12 border-t md:bg-background md:border-t-bleu md:rounded-md"
       style={{ boxShadow: '0 0px 24px rgba(255, 186, 82, 0.1)' }}>
       <div className="text-[#D4D4D4] font-jetbrains font-light">
         <h2 className="text-sm text-blue-400 mb-4">

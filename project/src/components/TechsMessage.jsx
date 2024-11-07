@@ -6,7 +6,7 @@ const TechsMessage = ({ onNext }) => {
             <div
                 className="tooltip-container"
                 style={{
-                    top: '330px',
+                    top: '380px',
                     left: '60px',
                 }}
             >
@@ -17,7 +17,7 @@ const TechsMessage = ({ onNext }) => {
                     onClick={onNext}>
                     Entendido
                 </button>
-                <div className="tooltip-arrow mt-10"></div>
+                <div className="tooltip-arrow mt-20"></div>
             </div>
         </div>
     )
