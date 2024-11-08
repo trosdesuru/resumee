@@ -40,5 +40,3 @@ const Header = () => {
 }
 
 export default Header
-
-// TODO add arrows on the left side from SearchBar
