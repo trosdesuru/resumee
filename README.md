@@ -1,6 +1,6 @@
 # resumee
 
-<h2>¡Bienvenido/a!</h2>
+<h2>Bienvenido/a</h2>
             <p className="font-jetbrains text-sm text-left">
                 Muy buenas! Mi nombre es Eduard Hernández,
                 desarrollador <span className="bg-gray text-yellow-400 px-1 py-0.5 rounded-md font-robotomono">
