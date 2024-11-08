@@ -3,6 +3,7 @@ import React from 'react'
 // import Searchbar from './SearchBar'
 
 import { BiDockLeft, BiDockBottom, BiDockRight, BiColumns } from 'react-icons/bi'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
 const Header = () => {
   console.debug('editor bar -> call')
@@ -18,7 +19,11 @@ const Header = () => {
 
       {/* <div className='flex-1'><SearchBar /></div> */}
 
-      <div className="hidden sm:flex flex-1 mx-4 justify-center">
+      <div className="hidden sm:flex flex-1 mx-4 justify-center items-center gap-4">
+        <div className='hidden sm:flex flex-row gap-2 text-textPrimary cursor-pointer'>
+          <FaArrowLeft className='hover:text-white' size={13}/>
+          <FaArrowRight className='hover:text-white' size={13}/>
+        </div>
         <input className="w-2/4 text-textPrimary text-sm px-3 py-1 rounded-md bg-gray"
           type="text"
           placeholder="currículum de Eduard Hernández..." />

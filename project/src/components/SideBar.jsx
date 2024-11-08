@@ -57,8 +57,8 @@ const Sidebar = ({ openSection }) => {
 
                 <div className='flex flex-row items-center pl-4 pt-4 pb-4 cursor-pointer hover:bg-gray hover:line'
                     onClick={toggleProfileCard}>
-                    <Analytics />
                     <RiInformation2Line className="mr-2 text-blue-400" />
+                    <Analytics />
                     <h2 className="text-sm font-doppioOne">Eduard Hernández</h2>
                 </div>
 
@@ -68,29 +68,29 @@ const Sidebar = ({ openSection }) => {
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('experience')}>
-                        <Analytics />
                         <DiJavascript1 className="mr-2 text-yellowHover" size={20} /> Experiencia
+                        <Analytics />
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('skills')}>
-                        <Analytics />
                         <FaReact className="mr-2 text-bleu" size={20} /> Habilidad
+                        <Analytics />
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('projects')}>
-                        <Analytics />
                         <VscGithub className="mr-2 text-textPrimary" size={20} /> Proyectos
+                        <Analytics />
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('education')}>
-                        <Analytics />
                         <div className="relative flex items-center">
                             <div className="relative flex items-center justify-center mr-2">
                                 <p className="absolute flex items-center inset-0.7 justify-center w-3.5 h-3.5 bg-white rounded-full"></p>
                                 <FaHtml5 className="text-orange-500 relative" size={22} />
+                                <Analytics />
                             </div>
                         </div>
                         Educación
@@ -106,7 +106,7 @@ const Sidebar = ({ openSection }) => {
 
             {isProfileCardOpen && <ProfileCard position={position} onClose={updateProfileCardPosition} />}
             <Analytics />
-        </div>
+        </div >
     )
 }
 
