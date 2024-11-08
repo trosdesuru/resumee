@@ -40,7 +40,8 @@ const Sidebar = ({ openSection }) => {
     }
 
     const toggleProfileCard = () => {
-        setIsProfileCardOpen(!isProfileCardOpen)
+        if (window.innerWidth >= 640 || isProfileCardOpen)
+            setIsProfileCardOpen(!isProfileCardOpen)
     }
 
     const updateProfileCardPosition = (newPosition) => {

@@ -1,50 +1,87 @@
 import React from 'react'
 
-function Education({ data }) {
+import { IoMailUnreadOutline } from 'react-icons/io5'
+import { IoPhonePortraitOutline } from 'react-icons/io5'
+import { BiHomeAlt2 } from 'react-icons/bi'
+import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord, FaDev } from 'react-icons/fa'
+
+function profile({ data }) {
+  console.debug('tab skills -> call')
+
   return (
-    <div className='p-2 ml-2 mt-2 md:bg-editor md:p-4 md:mx-3 md:my-12 md:border-t md:max-w-4xl md:border-t-bleu md:rounded-md'
-      style={{ boxShadow: window.innerWidth >= 768 ? '0 0px 24px rgba(255, 186, 82, 0.1)' : 'none' }}>
+    <div className='p-2 top-0 left-0'>
       <div className="text-[#D4D4D4] font-jetbrains font-light">
-        <h2 className="text-sm text-blue-400 mb-4">
-          <span className="text-purple-400">import</span> Educación
+        <h2 className="text-sm text-blue-400 mb-2">
+          <span className="text-purple-400">import</span> Contacto
           <span className="text-purple-400"> from </span>
-          <span className="text-orange-300">'education'</span>
+          <span className="text-orange-300">'profile'</span>
         </h2>
 
-        <ul className="space-y-4">
-          {data.map((item, index) => (
-            <li key={index} className="mb-4 pl-4">
-              <p className="text-sm font-medium text-blue-500">const
-                <span className="text-sm text-yellowHover"> {item.degree}</span> =
-                <span className="text-yellowHover"> {'{'}</span>
-              </p>
+        <div className="p-1">
+          <div className="mb-4 sm:mb-6">
+            <h2 className="text-xl font-jetbrains font-light">Eduard Hernández Ventós</h2>
+            <p className="font-robotomono font-normal text-sm text-[#6FFFFF]">
+              UX | UI Designer
+              <span className='text-[#FFBA52] mx-1 sm:mx-2 font-jetbrains'>|</span>
+              Web Designer
+              <span className='text-[#FFBA52] mx-1 sm:mx-2 font-jetbrains'>|</span>
+              Full-Stack Developer
+            </p>
+          </div>
 
-              <div className="md:ml-3 md:pl-4 md:border-l md:border-yellowHover">
-                <p className="font-normal text-sm">
-                  <span className="text-blue-300">institución</span>: "{item.institution}",<br />
-                  <span className="text-blue-300">años</span>: "{item.year}",<br />
-                  <span className="text-blue-300">descripción</span>: "{item.description}"
-                </p>
+          <div className="flex flex-col space-y-2">
+            <div className="flex items-center space-x-1 text-[#ECECEC]">
+              <a href="mailto:eduardhernandezventos@gmail.com" target="_blank" rel="noopener noreferrer">
+                <IoMailUnreadOutline size={18} sm:size={21} className="hover:text-[#6FFFFF]" />
+              </a>
+              <p className='text-sm sm:text-sm font-jetbrains font-thin text-[#ECECEC]'>eduardhernandezventos@gmail.com</p>
+            </div>
+            <div className="flex items-center space-x-1 text-[#ECECEC]">
+              <IoPhonePortraitOutline size={18} sm:size={21} />
+              <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>+34 683 584 981</p>
+            </div>
+            <div className="flex items-center space-x-1 text-[#ECECEC]">
+              <BiHomeAlt2 size={18} sm:size={21} />
+              <p className='text-sm font-jetbrains font-thin text-[#ECECEC]'>Barcelona, España</p>
+            </div>
 
-                <div className="mt-2">
-                  <strong>Aptitudes adquiridas:</strong>
-                  <ul className="list-disc ml-4 text-sm">
-                    {item.skills.map((skill, idx) => (
-                      <li key={idx} className="text-[#D4D4D4] leading-relaxed">
-                        <span className="text-white text-[14px]">"{skill}"</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+            <div className="flex space-x-2 pt-2 items-center text-[#ECECEC]">
+              <a className="social-icon hover:bg-white hover:text-[#0077B5] rounded-full p-0.5"
+                href="https://www.linkedin.com/in/eduard-hernandez-ventos"
+                target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={20} sm:size={24} />
+              </a>
 
-              <p className="text-yellowHover">{'}'}</p>
-            </li>
-          ))}
-        </ul>
+              <a className="social-icon hover:bg-white hover:text-black rounded-full p-0.5"
+                href="https://github.com/trosdesuru"
+                target="_blank" rel="noopener noreferrer">
+                <FaGithub size={20} sm:size={24} />
+              </a>
+
+              <a className="social-icon hover:bg-[#25D366] hover:text-white rounded-full p-0.5"
+                href="https://wa.me/683584981"
+                target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp size={22} sm:size={26} />
+              </a>
+
+              <a className="social-icon hover:bg-violet-500 hover:text-white rounded-full p-0.5"
+                href="https://discord.com/users/eduhv"
+                target="_blank" rel="noopener noreferrer">
+                <FaDiscord size={22} sm:size={26} />
+              </a>
+
+              <a className="social-icon hover:bg-white hover:text-black rounded-full p-0.5"
+                href="https://dev.to/eduhvdev"
+                target="_blank" rel="noopener noreferrer">
+                <FaDev size={22} sm:size={26} />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
+
 }
 
-export default Education
+export default profile

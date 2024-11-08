@@ -5,6 +5,7 @@ import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord, FaDev } from 'react-icons/
 import { BiHomeAlt2 } from "react-icons/bi"
 
 const ProfileCard = ({ position, onClose }) => {
+    
     const [dragging, setDragging] = useState(false)
     const [offset, setOffset] = useState({ x: 0, y: 0 })
 
