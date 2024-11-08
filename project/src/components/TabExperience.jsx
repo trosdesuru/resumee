@@ -4,7 +4,7 @@ function TabExperience({ data }) {
   console.debug('tab experience -> call')
 
   return (
-    <div className='bg-background p-4 mx-6 mt-12 border-t border-t-bleu rounded-md'
+    <div className='md:bg-editor md:p-4 md:mx-3 md:my-12 md:border-t md:max-w-4xl md:border-t-bleu md:rounded-md'
       style={{ boxShadow: '0 0px 24px rgba(255, 186, 82, 0.1)' }}>
       <div className="text-[#D4D4D4] font-jetbrains font-light">
         <h2 className="text-sm text-blue-400 mb-4">
@@ -15,12 +15,12 @@ function TabExperience({ data }) {
 
         <ul className="space-y-4">
           {data.map((item, index) => (
-            <li key={index} className="mb-4 pl-4">
+            <li key={index} className="md:mb-4 md:pl-4">
               <p className="text-sm font-medium text-blue-500">function
-                <span className="text-sm text-yellowHover"> {item.title}</span>()
+                <span className="text-sm text-yellowHover"> {item.title}</span> ()
                 <span className='text-yellowHover'> {'{'}</span></p>
 
-              <div className="ml-3 pl-4 border-l border-yellowHover">
+              <div className="m-1 md:ml-3 md:pl-4 md:border-l md:border-yellowHover">
                 <p className='font-normal text-sm'><span
                   className="text-blue-300">company</span>:
                   <span className="font-extralight text-white"> {item.company}</span>,</p>
@@ -43,14 +43,14 @@ function TabExperience({ data }) {
                 <ul className="ml-6">
                   {item.description.map((description, index) => (
                     <li key={index} className="text-[#D4D4D4] leading-relaxed">
-                      <span className="text-white text-[14px]">{description}</span >{index < item.description.length - 1 ? ',' : ''}
+                      <span className="text-white text-[14px] sm:mx-0">{description}</span >{index < item.description.length - 1 ? ',' : ''}
                     </li>
                   ))}
                 </ul>
-                <p>]</p>
+              <p className='sm:ml-5'>]</p>
               </div>
 
-              <p className='text-yellowHover'>{'}'}</p>
+              <p className='md:ml-3 text-yellowHover'>{'}'}</p>
             </li>
           ))}
         </ul>

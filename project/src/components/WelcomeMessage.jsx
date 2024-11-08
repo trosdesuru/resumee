@@ -2,8 +2,8 @@ import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io"
 
 const WelcomeMessage = ({ onNext }) => (
-    <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
-        <div className="p-6 rounded-lg text-white shadow-lg flex flex-col justify-center max-w-md mx-auto">
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div className="p-6 rounded-lg text-white shadow-lg flex flex-col justify-center max-w-md mx-auto md:bg-[#1F2937] xl:bg-[#1F2937]">
             <h2 className="text-3xl font-jetbrains mb-4 text-start">¡Bienvenido/a!</h2>
 
             <p className="font-jetbrains text-sm text-left">

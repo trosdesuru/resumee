@@ -6,8 +6,8 @@ const ProfileMessage = ({ onClose }) => {
             <div
                 className="tooltip-container"
                 style={{
-                    top: '50px',
-                    left: '50px',
+                    top: '3rem',
+                    left: '3.5rem',
                 }}
             >
                 <p className="text-sm font-jetbrains font-light text-white">
