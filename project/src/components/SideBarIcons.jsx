@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import SideBar from './SideBar'
 
 import { VscSourceControl, VscDebugAlt, VscExtensions, VscLiveShare, VscGithub } from 'react-icons/vsc'
@@ -14,6 +15,7 @@ const SidebarIcons = ({ toggleSidebar }) => {
 
   return (
     <div className="flex flex-col p-3 mt-10 space-y-4 h-full overflow-y-visible">
+      <Analytics />
       <div className="flex flex-col items-center space-y-4">
         <AiOutlineFile onClick={toggleSidebar} className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />
         <AiOutlineSearch className="text-textPrimary text-2xl cursor-pointer hover:text-blue-400 transition duration-200" />

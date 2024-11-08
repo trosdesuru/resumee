@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import ProfileCard from './ProfileCard'
 
 import { FaHtml5, FaReact } from 'react-icons/fa'
@@ -29,7 +30,7 @@ const Sidebar = ({ openSection }) => {
 
         const stopDrag = () => {
             setIsDragging(false)
-            
+
             document.removeEventListener('mousemove', doDrag)
             document.removeEventListener('mouseup', stopDrag)
         }
@@ -56,6 +57,7 @@ const Sidebar = ({ openSection }) => {
 
                 <div className='flex flex-row items-center pl-4 pt-4 pb-4 cursor-pointer hover:bg-gray hover:line'
                     onClick={toggleProfileCard}>
+                    <Analytics />
                     <RiInformation2Line className="mr-2 text-blue-400" />
                     <h2 className="text-sm font-doppioOne">Eduard Hernández</h2>
                 </div>
@@ -66,21 +68,25 @@ const Sidebar = ({ openSection }) => {
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('experience')}>
+                        <Analytics />
                         <DiJavascript1 className="mr-2 text-yellowHover" size={20} /> Experiencia
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('skills')}>
+                        <Analytics />
                         <FaReact className="mr-2 text-bleu" size={20} /> Habilidad
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('projects')}>
+                        <Analytics />
                         <VscGithub className="mr-2 text-textPrimary" size={20} /> Proyectos
                     </li>
 
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('education')}>
+                        <Analytics />
                         <div className="relative flex items-center">
                             <div className="relative flex items-center justify-center mr-2">
                                 <p className="absolute flex items-center inset-0.7 justify-center w-3.5 h-3.5 bg-white rounded-full"></p>
@@ -95,9 +101,11 @@ const Sidebar = ({ openSection }) => {
             <div
                 className={`absolute top-0 right-0 h-full w-1 cursor-ew-resize ${isDragging ? 'bg-blue-500' : 'hover:bg-bleu'} transition-colors duration-200`}
                 onMouseDown={handleMouseDown}
+
             />
 
             {isProfileCardOpen && <ProfileCard position={position} onClose={updateProfileCardPosition} />}
+            <Analytics />
         </div>
     )
 }
