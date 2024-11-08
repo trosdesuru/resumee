@@ -4,8 +4,8 @@ function TabSkills({ data }) {
   console.debug('tab skills -> call')
 
   return (
-    <div className="bg-background p-4 mx-6 mt-12 border-t border-t-bleu rounded-md"
-      style={{ boxShadow: '0 0px 24px rgba(255, 186, 82, 0.1)' }}>
+    <div className='p-2 ml-2 mt-2 md:bg-editor md:p-4 md:mx-3 md:my-12 md:border-t md:max-w-4xl md:border-t-bleu md:rounded-md'
+      style={{ boxShadow: window.innerWidth >= 768 ? '0 0px 24px rgba(255, 186, 82, 0.1)' : 'none' }}>
       <div className="text-[#D4D4D4] font-jetbrains font-light">
         <h2 className="text-sm text-blue-400 mb-4">
           <span className="text-purple-400">import</span> Habilidades
@@ -15,13 +15,13 @@ function TabSkills({ data }) {
 
         <ul className="space-y-4">
           {data.map((category, index) => (
-            <li key={index} className="mb-4 pl-4">
+            <li key={index} className="md:mb-4 md:pl-4">
               <p className="text-sm font-medium text-blue-500">const
                 <span className="text-sm text-yellowHover"> {category.category}</span> =
                 <span className="text-yellowHover"> {'{'}</span>
               </p>
 
-              <div className="ml-3 pl-4 border-l border-yellowHover">
+              <div className="md:ml-3 md:pl-4 md:border-l md:border-yellowHover">
                 <p className="font-normal text-sm">
                   <span className="text-blue-300">skills</span>: [
                 </p>

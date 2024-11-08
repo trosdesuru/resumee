@@ -4,8 +4,8 @@ import { FaGithub } from 'react-icons/fa'
 
 function TabProjects({ data }) {
   return (
-    <div className="bg-background p-4 sm:mx-6 mt-12 border-t md:bg-background md:border-t-bleu md:rounded-md"
-      style={{ boxShadow: '0 0px 24px rgba(255, 186, 82, 0.1)' }}>
+    <div className='p-2 ml-2 mt-2 md:bg-editor md:p-4 md:mx-3 md:my-12 md:border-t md:max-w-4xl md:border-t-bleu md:rounded-md'
+      style={{ boxShadow: window.innerWidth >= 768 ? '0 0px 24px rgba(255, 186, 82, 0.1)' : 'none' }}>
       <div className="text-[#D4D4D4] font-jetbrains font-light">
         <h2 className="text-sm text-blue-400 mb-4">
           <span className='text-purple-400'>import</span> Proyectos
@@ -21,7 +21,7 @@ function TabProjects({ data }) {
                 <span className='text-yellowHover'> {'{'}</span>
               </p>
 
-              <div className="ml-3 pl-4 border-l border-yellowHover">
+              <div className="md:ml-3 md:pl-4 md:border-l md:border-yellowHover">
                 <p className='font-normal text-sm'>
                   <span className="text-blue-300">description</span>:
                   <span className="font-extralight text-white"> {project.description}</span>,
@@ -54,8 +54,8 @@ function TabProjects({ data }) {
                     rel="noopener noreferrer"
                     className="rounded-full"
                   >
-                    <span className='text-bleu'>Documentación del proyecto:</span>
-                    <FaGithub size={26} className='mt-2' />
+                    <span className='text-sm text-bleu'>Documentación del proyecto:</span>
+                    <FaGithub size={26} className='ml-5 mt-2' />
                   </a>
                 )}
               </div>
