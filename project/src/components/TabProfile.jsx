@@ -9,9 +9,10 @@ function profile({ data }) {
   console.debug('tab skills -> call')
 
   return (
-    <div className='p-2 top-0 left-0'>
-      <div className="text-[#D4D4D4] font-jetbrains font-light">
-        <h2 className="text-sm text-blue-400 mb-2">
+    <div className='p-2 ml-2 mt-2 md:bg-editor md:p-4 md:mx-3 md:my-12 md:border-t md:max-w-4xl md:border-t-bleu md:rounded-md'
+    style={{ boxShadow: window.innerWidth >= 768 ? '0 0px 24px rgba(255, 186, 82, 0.1)' : 'none' }}>
+      <div className="flex flex-col text-[#D4D4D4] font-jetbrains font-light">
+        <h2 className="inset-10 text-sm text-blue-400">
           <span className="text-purple-400">import</span> Contacto
           <span className="text-purple-400"> from </span>
           <span className="text-orange-300">'profile'</span>

@@ -12,14 +12,14 @@ function EditorScreen({ activeTab, experience, skills, projects, education }) {
     console.debug('editor screen -> call')
 
     return (
-        <div className={`relative flex-1 overflow-auto bg-gray ${activeTab ? 'bg-gray' : ''}
+        <div className={`flex-1 overflow-auto bg-gray ${activeTab ? 'bg-gray' : ''}
         lg:px-10 xl:px-10 2xl:px:10`}>
             {!activeTab && (
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex h-3/4 items-center justify-center">
                     <Analytics />
                     {window.innerWidth <= 640 ? (<TabProfile />
                     ) : (
-                        <SiVisualstudiocode className="text-[50vw] items-center justify-center text-editor" />)}
+                        <SiVisualstudiocode className="text-[20vw] lg:text-[20vw] items-center justify-center text-editor" />)}
                 </div>
             )}
 

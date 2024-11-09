@@ -4,7 +4,7 @@ function TabExperience({ data }) {
   console.debug('tab experience -> call')
 
   return (
-    <div className='bg-gray md:bg-editor md:p-4 md:mx-3 md:my-12 md:border-t md:max-w-3xl md:border-t-bleu md:rounded-md ml-2 mt-2'
+    <div className='p-2 ml-2 mt-2 md:bg-editor md:p-4 md:mx-3 md:my-12 md:border-t md:max-w-4xl md:border-t-bleu md:rounded-md'
       style={{ boxShadow: window.innerWidth >= 767 ? '0 0px 24px rgba(255, 186, 82, 0.1)' : 'none' }}>
       <div className="text-[#D4D4D4] font-jetbrains font-light">
         <h2 className="text-sm text-blue-400 mb-4">

@@ -53,7 +53,7 @@ const Sidebar = ({ openSection }) => {
     }
 
     return (
-        <div style={{ width }} className="sm:flex flex-col bg-background text-textPrimary mt-10 h-full border-r border-l border-border">
+        <div style={{ width }} className="sm:flex flex-col bg-background text-textPrimary mt-10 h-screen border-r border-l border-border">
             <div className="flex flex-col h-full w-full">
 
                 <div className='flex flex-row items-center pl-4 pt-4 pb-4 cursor-pointer hover:bg-gray hover:line'
@@ -66,7 +66,6 @@ const Sidebar = ({ openSection }) => {
                 <div className="w-full border-t border-gray"></div>
 
                 <ul className="flex flex-col font-doppioOne text-sm">
-
                     <li className="relative flex items-center px-4 py-2 hover:bg-gray cursor-pointer hover:line"
                         onClick={() => openSection('experience')}>
                         <DiJavascript1 className="mr-2 text-yellowHover" size={20} /> Experiencia
@@ -100,7 +99,7 @@ const Sidebar = ({ openSection }) => {
             </div>
 
             <div
-                className={`absolute top-0 right-0 h-full w-1 cursor-ew-resize ${isDragging ? 'bg-blue-500' : 'hover:bg-bleu'} transition-colors duration-200`}
+                className={`h-full w-1 cursor-ew-resize ${isDragging ? 'bg-blue-500' : 'hover:bg-bleu'} transition-colors duration-200`}
                 onMouseDown={handleMouseDown}
 
             />
