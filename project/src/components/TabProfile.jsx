@@ -1,9 +1,7 @@
 import React from 'react'
 
 import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord, FaDev } from 'react-icons/fa'
-import { IoMailUnreadOutline } from 'react-icons/io5'
-import { IoPhonePortraitOutline } from 'react-icons/io5'
-import { BiHomeAlt2 } from 'react-icons/bi'
+import { FcGoogle } from "react-icons/fc"
 
 function profile() {
   console.debug('tab skills -> call')
@@ -19,7 +17,7 @@ function profile() {
           <span className="text-orange-300">'profile'</span>
         </h2>
 
-        <div className="p-1">
+        <div className='pt-8'>
           <div className="mb-4 sm:mb-6">
             <h2 className="text-xl font-jetbrains font-light">Eduard Hernández Ventós</h2>
             <p className="font-robotomono font-normal text-sm text-[#6FFFFF]">
@@ -32,22 +30,14 @@ function profile() {
           </div>
 
           <div className="space-y-2 w-full">
-            <div className="flex items-center space-x-1 text-[#ECECEC]">
-              <a href="mailto:eduardhernandezventos@gmail.com" target="_blank" rel="noopener noreferrer">
-                <IoMailUnreadOutline size={18} sm:size={21} className="hover:text-[#6FFFFF]" />
-              </a>
-              <p className="text-sm sm:text-sm font-jetbrains font-thin text-[#ECECEC]">eduardhernandezventos@gmail.com</p>
-            </div>
-            <div className="flex items-center space-x-1 text-[#ECECEC]">
-              <IoPhonePortraitOutline size={18} sm:size={21} />
-              <p className="text-sm font-jetbrains font-thin text-[#ECECEC]">+34 683 584 981</p>
-            </div>
-            <div className="flex items-center space-x-1 text-[#ECECEC]">
-              <BiHomeAlt2 size={18} sm:size={21} />
-              <p className="text-sm font-jetbrains font-thin text-[#ECECEC]">Barcelona, España</p>
-            </div>
 
             <div className="flex space-x-2 pt-2 items-center text-[#ECECEC]">
+
+              <a className="social-icon hover:bg-white hover:text-[#0077B5] rounded-full p-0.5"
+                href="mailto:eduardhernandezventos@gmail.com" target="_blank" rel="noopener noreferrer">
+                <FcGoogle size={20} sm:size={24} />
+              </a>
+
               <a className="social-icon hover:bg-white hover:text-[#0077B5] rounded-full p-0.5"
                 href="https://www.linkedin.com/in/eduard-hernandez-ventos"
                 target="_blank" rel="noopener noreferrer">
