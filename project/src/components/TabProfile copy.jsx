@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord, FaDev } from 'react-icons/fa'
-import { IoMailUnreadOutline } from 'react-icons/io5'
-import { IoPhonePortraitOutline } from 'react-icons/io5'
-import { BiHomeAlt2 } from 'react-icons/bi'
+import { FaLinkedin, FaGithub, FaWhatsapp, FaDiscord, FaDev } from 'react-icons/fa';
+import { IoMailUnreadOutline } from 'react-icons/io5';
+import { IoPhonePortraitOutline } from 'react-icons/io5';
+import { BiHomeAlt2 } from 'react-icons/bi';
 
 function profile() {
-  console.debug('tab skills -> call')
+  console.debug('tab skills -> call');
 
   return (
     <div className="w-full max-w-4xl mx-auto p-2 mt-2 md:bg-editor md:p-4 md:my-12 md:border-t md:border-t-bleu md:rounded-md overflow-x-hidden"
@@ -82,7 +82,7 @@ function profile() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default profile
+export default profile;
