@@ -43,5 +43,3 @@ const Terminal = () => {
 }
 
 export default Terminal
-
-// TODO adjust input terminal

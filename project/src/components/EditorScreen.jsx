@@ -15,10 +15,11 @@ function EditorScreen({ activeTab, experience, skills, projects, education }) {
         <div className={`relative flex-1 overflow-auto bg-gray ${activeTab ? 'bg-gray' : ''}
         lg:px-10 xl:px-10 2xl:px:10`}>
             {!activeTab && (
-                <div className="absolute mt-10 flex items-start justify-start">
+                <div className="absolute inset-0 flex items-center justify-center">
                     <Analytics />
-                    {window.innerWidth <= 640 ? (<TabProfile />) : (<SiVisualstudiocode className="text-editor text-[30vw]" />)}
-                    
+                    {window.innerWidth <= 640 ? (<TabProfile />
+                    ) : (
+                        <SiVisualstudiocode className="text-[50vw] items-center justify-center text-editor" />)}
                 </div>
             )}
 
