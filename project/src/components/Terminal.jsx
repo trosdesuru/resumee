@@ -18,14 +18,14 @@ const Terminal = () => {
   }
 
   return (
-    <div className="w-full border-t h-48 hidden sm:flex flex-col text-textSecondary">
+    <div className="w-full border-t border-border h-48 hidden sm:flex flex-col text-textSecondary">
       <div className="flex items-center justify-between text-gray-400 px-4 py-2">
-        <div className="flex items-center space-x-2">
-          <p className="font-doppioOne text-xs font-extralight hover:text-white cursor-pointer" >PROBLEMS</p>
-          <p className="font-doppioOne text-xs font-extralight hover:text-white cursor-pointer" >OUTPUT</p>
-          <p className="font-doppioOne text-xs font-extralight hover:text-white cursor-pointer" >DEBUG CONSOLE</p>
-          <p className="font-doppioOne text-xs font-extralight border-b border-bleu text-white cursor-pointer">TERMINAL</p>
-          <p className="font-doppioOne text-xs font-extralight hover:text-white cursor-pointer" >DEBUG CONSOLE</p>
+        <div className="flex items-center space-x-5">
+          <p className="font-sans text-[12px] font-normal hover:text-white cursor-pointer" >PROBLEMS</p>
+          <p className="font-sans text-[12px] font-normal hover:text-white cursor-pointer" >OUTPUT</p>
+          <p className="font-sans text-[12px] font-normal hover:text-white cursor-pointer" >DEBUG CONSOLE</p>
+          <p className="font-sans text-[12px] font-normal border-b border-bleu text-white cursor-pointer">TERMINAL</p>
+          <p className="font-sans text-[12px] font-normal hover:text-white cursor-pointer" >DEBUG CONSOLE</p>
         </div>
         <div className="flex space-x-2"></div>
       </div>

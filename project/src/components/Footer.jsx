@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <div className="fixed bottom-0 w-full h-6 justify-between bg-background border-t border-border hidden sm:flex z-20">
       <div className='flex flex-row space-x-2'>
-        <div className="flex flex-row w-8 items-center text-white bg-bleu">
+        <div className="flex flex-row w-8 items-center text-white bg-bleu hover:bg-opacity-90 cursor-pointer">
           <MdOutlineKeyboardArrowRight size={26} className='absolute pr-1.5 pt-1' />
           <MdOutlineKeyboardArrowLeft size={26} className='absolute pl-1.5 pb-1' />
         </div>
-        <div className="flex flex-row items-center font-doppioOne text-xs font-light text-white">
+        <div className="flex flex-row items-center font-doppioOne text-xs font-light text-white hover:bg-gray cursor-pointer">
           <IoIosGitBranch size={16} />
           develop*
         </div>
