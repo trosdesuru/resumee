@@ -18,26 +18,26 @@ const Terminal = () => {
   }
 
   return (
-    <div className=" w-full text-textSecondary border-t border-vs_test h-48 font-mono hidden sm:flex flex-col">
-      <div className="flex items-center justify-between bg-gray-800 text-gray-400 px-4 py-2 border-b border-border">
+    <div className="w-full border-t h-48 hidden sm:flex flex-col text-textSecondary">
+      <div className="flex items-center justify-between text-gray-400 px-4 py-2">
         <div className="flex items-center space-x-2">
-          <VscChevronDown className="text-sm" />
-          <h2 className="text-xs">TERMINAL</h2>
-          <p className="text-xs text-editor">BASH</p>
+          <p className="font-doppioOne text-xs font-extralight" >PROBLEMS</p>
+          <p className="font-doppioOne text-xs font-extralight" >OUTPUT</p>
+          <p className="font-doppioOne text-xs font-extralight" >DEBUG CONSOLE</p>
+          <p className="font-doppioOne text-xs font-extralight">TERMINAL</p>
+          <p className="font-doppioOne text-xs font-extralight" >DEBUG CONSOLE</p>
         </div>
         <div className="flex space-x-2"></div>
       </div>
-
-      <form onSubmit={handleSubmit} className="flex items-center space-x-2 p-3 mb-10 border-t border-gray-700">
-        <p className="text-green-500 font-bold">➜</p>
-        <input
-          type="text"
-          value={input}
-          onChange={(event) => setInput(event.target.value)}
-          className="flex-1 bg-transparent focus:outline-none text-white px-2 py-1 placeholder-gray-500"
-          placeholder={`VITE ${input} v5.4.10  ready in 637 ms`}
-        />
-      </form>
+      <div>
+        <div className='p-3'>
+          <p className='font-robotomono text-xs'>
+            <span className='font-bold text-cyan-500'>[vite] </span> 
+            <span className='text-green-500'>hmr update </span>
+            <span className='font-normal text-stone-500'>/src/components/Terminal.jsx, /src/index.css </span> 
+            <span className='text-yellow-400'>(x31)</span></p>
+        </div>
+      </div>
     </div>
   )
 }

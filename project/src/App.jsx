@@ -5,13 +5,13 @@ import TechsMessage from './components/TechsMessage'
 import WelcomeMessage from './components/WelcomeMessage'
 import ProfileMessage from './components/ProfileMessage'
 
-import BottomBar from './components/BottomBar'
-import EditorScreen from './components/EditorScreen'
+import Header from './components/Header'
 import SidebarIcons from './components/SideBarIcons'
 import SideBar from './components/SideBar'
 import TabBar from './components/TabBar'
+import EditorScreen from './components/EditorScreen'
 import Terminal from './components/Terminal'
-import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   console.debug('app -> call')
@@ -102,7 +102,7 @@ function App() {
             <Terminal />
           </div>
         </div>
-        <BottomBar />
+        <Footer />
       </div>
     </>
   )
