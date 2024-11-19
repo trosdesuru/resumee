@@ -15,7 +15,7 @@ Unique Visual Style: A layout that emulates the Visual Studio Code environment.
 - Interactivity: Responsive design with smooth animations to enhance user experience.
 
 ### UX | UI Design
-![Figma]([https://www.figma.com/proto/2Jqh5rduEoNJAEK8olefch/ISDI-Project-%7C-cities?page-id=47%3A270&node-id=83-33&node-type=canvas&viewport=-303%2C877%2C0.39&t=5vC2tVC4q8nyme1o-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=83%3A33](https://www.figma.com/design/Ck7FNLBEZvpOlUvnSZjlIf/CV?node-id=351-425)])
+![Figma](https://www.figma.com/proto/2Jqh5rduEoNJAEK8olefch/ISDI-Project-%7C-cities?page-id=47%3A270&node-id=83-33&node-type=canvas&viewport=-303%2C877%2C0.39&t=5vC2tVC4q8nyme1o-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=83%3A33](https://www.figma.com/design/Ck7FNLBEZvpOlUvnSZjlIf/CV?node-id=351-425))
 
 ## Technical
 
