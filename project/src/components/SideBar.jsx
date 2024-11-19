@@ -93,7 +93,7 @@ const Sidebar = ({ openSection }) => {
                                 <Analytics />
                             </div>
                         </div>
-                        Educación
+                        Formación
                     </li>
                 </ul>
             </div>

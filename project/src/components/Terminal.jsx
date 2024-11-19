@@ -1,21 +1,7 @@
-import React, { useState } from 'react'
-
-import { VscChevronDown } from 'react-icons/vsc'
+import React from 'react'
 
 const Terminal = () => {
   console.debug('terminal -> call')
-
-  const [commands, setCommands] = useState([])
-  const [input, setInput] = useState('')
-
-  const handleSubmit = (event) => {
-    event.preventDefault()
-
-    if (input) {
-      setCommands((prev) => [...prev, { command: input, output: `Ejecutando: ${input}` }])
-      setInput('')
-    }
-  }
 
   return (
     <div className="w-full border-t border-border h-48 hidden sm:flex flex-col text-textSecondary">
@@ -32,9 +18,9 @@ const Terminal = () => {
       <div>
         <div className='p-3'>
           <p className='font-robotomono text-xs'>
-            <span className='font-bold text-cyan-500'>[vite] </span> 
+            <span className='font-bold text-cyan-500'>[vite] </span>
             <span className='text-green-500'>hmr update </span>
-            <span className='font-normal text-stone-500'>/src/components/Terminal.jsx, /src/index.css </span> 
+            <span className='font-normal text-stone-500'>/src/components/Terminal.jsx, /src/index.css </span>
             <span className='text-yellow-400'>(x31)</span></p>
         </div>
       </div>
