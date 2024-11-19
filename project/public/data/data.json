@@ -113,6 +113,21 @@
         "/img/cities-4.png"
       ],
       "url": "https://github.com/trosdesuru/cities-app/blob/develop/project/doc/README.md"
+    },
+    {
+      "title": "Résumé Project",
+      "description": "",
+      "technologies": [
+        "HTML / CSS / JS",
+        "React",
+        "TailwindCSS",
+        "Node",
+        "Vite",
+        "Figma",
+        "Vim",
+        "Responsive Design"
+      ],
+      "url": "https://github.com/trosdesuru/resume/"
     }
   ],
   "education": [
