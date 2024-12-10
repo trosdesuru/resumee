@@ -7,8 +7,8 @@ function logInfo(title, message) {
 function logInfoConsole() {
     logInfo('👋 Bienvenido/a mi sitio web!\nCV 1.2', '')
     logInfo('-> Created CV_1.0:', 'Project created(npm run build)\n\n- Vite + React\n- Tailwindcss\n- main.jsx\n- App.jsx\n')
-    logInfo('-> Updated CV_1.1:', 'Setted Visual Structure\n')
-    logInfo('-> Updated CV_1.2:', 'Setted activeTabs on EditorScreen\n')
+    logInfo('-> Updated CV_1.1:', 'Set Visual Structure\n')
+    logInfo('-> Updated CV_1.2:', 'Set activeTabs on EditorScreen\n')
     logInfo('-> Coming soon CV_1.3:', 'Create an API service\n')
 }
 
