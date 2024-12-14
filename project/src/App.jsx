@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import TechsMessage from './components/TechsMessage'
 import WelcomeMessage from './components/WelcomeMessage'
@@ -86,6 +88,7 @@ function App() {
 
       <div className="flex flex-col h-screen w-screen overflow-hidden font-mono bg-background">
         <Header />
+        <SpeedInsights />
         <Analytics />
 
         <div className="flex flex-1 overflow-hidden">
@@ -94,6 +97,7 @@ function App() {
           {openSidebar && (
             <SideBar onClose={toggleSidebar} openSection={openSection} />
           )}
+          <SpeedInsights />
           <Analytics />
 
           <div className="flex flex-col flex-1 overflow-hidden">
