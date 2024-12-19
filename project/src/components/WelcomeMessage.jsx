@@ -15,7 +15,7 @@ const WelcomeMessage = ({ onNext }) => (
                 sino también mi pasión por una interfaz intuitiva y agradable a la vista.
             </p>
 
-            <p className="font-jetbrains text-md text-left mt-4">
+            <p className="font-jetbrains text-sm text-left mt-4">
                 Navega tranquilo, y si encuentras algo confuso, piensa que simplemente es 'estilo moderno'.
                 Como un <span className="bg-gray text-yellow-400 px-1 py-0.5 rounded-md font-robotomono">
                     callback
